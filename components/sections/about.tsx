@@ -21,8 +21,8 @@ export default function About() {
     },
     {
       icon: <Code className="h-5 w-5 text-blue-400" />,
-      title: "Full Stack Developer",
-      description: "JavaScript, TypeScript, React, Angular, Node.js expertise",
+      title: "Senior Software Engineer",
+      description: "JavaScript, TypeScript, React, Angular, Node.js, AWS, Microservices",
     },
     {
       icon: <Award className="h-5 w-5 text-blue-400" />,
