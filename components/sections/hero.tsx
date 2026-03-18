@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export default function Hero() {
@@ -39,13 +39,12 @@ export default function Hero() {
         </div>
 
         <div className="space-y-2">
-          <p className="text-xl md:text-2xl text-gray-300 font-medium">Full Stack Developer</p>
-          <p className="text-lg text-gray-400">JavaScript • React • Angular • Node.js • TypeScript • Microservices</p>
+          <p className="text-xl md:text-2xl text-gray-300 font-medium">Senior Software Engineer</p>
+          <p className="text-lg text-gray-400">JavaScript • React • Angular • Node.js • TypeScript • Microservices • AWS</p>
         </div>
 
         <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-          Software Engineer at Biztree with 6+ years of experience building scalable web applications and complex
-          solutions. Recognized among the top 1% developers globally by Andela and Turing.
+          Senior Full-Stack Developer at Biztree with 8+ years of experience building and scaling SaaS platforms using MERN and MEAN stacks on AWS. Expert in microservices, event-driven architectures, and serverless solutions.
         </p>
 
         <div className="pt-4 flex flex-wrap gap-3 justify-center">
@@ -55,6 +54,15 @@ export default function Hero() {
           >
             Explore My Work
           </Link>
+          <a
+            href="/resume/asad-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-gray-800/50 hover:bg-gray-700/50 text-blue-400 border border-blue-500/30 font-medium px-8 py-3 rounded-lg transition-all duration-300"
+          >
+            <FileText className="h-5 w-5" />
+            View Resume
+          </a>
           <a
             href="https://www.linkedin.com/in/i-asad/"
             target="_blank"

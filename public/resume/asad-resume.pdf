@@ -1,0 +1,89 @@
+Muhammad Asad 
++923000420605 | asad@asadcodes.com | linkedin.com/in/i-asad | asadcodes.com 
+Senior Full-Stack Developer with 8+ years of experience building and scaling SaaS platforms using MERN and MEAN 
+stacks on AWS. Expertise in Node.js, NestJS, React, Angular, microservices, event-driven architectures, and serverless 
+solutions. Proven track record of reducing API latency by up to 45%, cutting backend development effort by 40%, and 
+executing zero-downtime migrations for systems serving 12M+ users. 
+TECHNICAL  SKILLS 
+Languages: JavaScript, TypeScript 
+Backend: Node.js, NestJS, Express.js, REST APIs, GraphQL 
+Frontend: React, Angular, Redux, NgRx, RxJS, HTML5, CSS3, Tailwind CSS, Bootstrap 
+Databases: MongoDB, PostgreSQL, MySQL, MSSQL, Redis 
+Cloud & DevOps: AWS (Lambda, S3, EventBridge, EC2, IAM, SQS, SNS, RDS), Docker, Kubernetes, CI/CD 
+Architecture: Microservices, Distributed System, Event-Driven Architecture, CQRS, API Gateway, System Design 
+Testing: Jest, Cypress, Unit Testing, Integration Testing, TDD | BDD Practices 
+Tools: Git, GitHub Actions, Jenkins, Bitbucket, Jira, Swagger, OpenAPI, PM2 
+EXPERIENCE 
+Biztree          Jan 2023 – Present 
+Senior Software Engineer Remote 
+ 
+Architected a unified NestJS microservices backend powering 5+ SaaS applications, serving 12M+ users, reducing 
+backend development effort by 40%. 
+ 
+Built the CloudDrive platform (NestJS, MongoDB) supporting 500K daily file operations with secure access (RBAC), S3 
+presigned URLs and thumbnail generation via AWS Lambda. 
+ 
+Led a large-scale MongoDB V1 to V2 migration (50M+ records) with zero downtime by designing safe batch 
+processing, validation, and rollback strategies. 
+ 
+Implemented a distributed queue system using BullMQ and RabbitMQ to offload heavy asynchronous workloads, reducing 
+API latency by 45% and improving system scalability. 
+ 
+Built HRM backend (NestJS, PostgreSQL, TypeORM) including timesheets, payroll logic, audit logs using CQRS-
+based architecture, and queue workers for scheduled jobs. 
+ 
+Developed an AI middleware layer for 12M+ users to power document workflows and chat features, centralizing token 
+usage tracking, subscription enforcement, and file integration with S3. 
+ 
+Applied event-driven workflows using AWS EventBridge, streaming detailed file activity events and triggering real-time 
+notification logic for collaboration features. 
+ 
+Containerized services with Docker and production-ready deployments, introducing structured logging, centralized 
+error handling, Swagger API documentation, and integration testing with Jest integrated into CI pipelines. 
+InvoZone          Oct 2021 – Jan 2023 
+Senior Software Engineer 
+ 
+Delivered an enterprise Privileged Access Management (PAM) platform (credential management, session 
+recording, key & certificate management) used by security teams for sensitive infrastructure access. 
+ 
+Designed and implemented a scalable microservices architecture with load balancing and multi-instance 
+clustering, enabling high availability and reliable performance in enterprise environments. 
+ 
+Modernized legacy modules by migrating to modular, service-oriented components and integrating third-party systems, 
+reducing technical debt and improving deployment speed by 30%. 
+ 
+Built session forensics and audit capabilities (keystroke and video recording), enhancing traceability, compliance, and 
+incident investigation workflows.
+
+ 
+ 
+Strengthened application and API security by implementing protections against XSS, SQL injection, directory traversal, 
+and brute-force attacks, improving overall system resilience. 
+ 
+Contributed to product enhancements that supported RevBits PAM winning Gold in the 2022 Globee Awards, 
+improving competitiveness against established security platforms. 
+TenX         Aug 2018 – Oct 2021 
+Software Engineer 
+ 
+Developed full-stack application for Ancera (microbial risk assessment), enabling automated detection pipelines that 
+reduced processing time by 50% for enterprise use. 
+ 
+Engineered and optimized distributed, resource-intensive systems for scientific data processing, improving 
+throughput and fault tolerance for large batch analytics. 
+ 
+Optimized software delivery lifecycles by implementing automated CI/CD pipelines, and end-to-end testing workflows 
+achieving a 2x increase in release frequency and a 30% reduction in environment-related downtime. 
+ 
+Reengineered internal NPM packages and front-end components to optimize performance and developer 
+productivity across teams. 
+ 
+Collaborated on a data-driven sports analytics platform (Arccos Golf), contributing to features that improved shot 
+strategy outcomes by 40% and ranked #3 in sports innovation. 
+ 
+Partnered with product and engineering teams in Agile environments to translate business requirements into scalable 
+technical solutions and deliver MVP features on schedule. 
+EDUCATION 
+National University of Computer and Emerging Sciences (FAST-NUCES) 
+Bachelor of Science in Computer Science 2014 – 2018 
+CERTIFICATIONS 
+AWS Certified Developer Associate — Amazon Web Services
