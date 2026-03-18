@@ -44,8 +44,7 @@ export default function Hero() {
         </div>
 
         <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-          Software Engineer at Biztree with 6+ years of experience building scalable web applications and complex
-          solutions. Recognized among the top 1% developers globally by Andela and Turing.
+          Senior Full-Stack Developer at Biztree with 8+ years of experience building and scaling SaaS platforms using MERN and MEAN stacks on AWS. Expert in microservices, event-driven architectures, and serverless solutions.
         </p>
 
         <div className="pt-4 flex flex-wrap gap-3 justify-center">

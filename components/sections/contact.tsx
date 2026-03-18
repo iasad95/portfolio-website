@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState, useEffect } from "react"
-import { MapPin, Mail, Linkedin, Github } from "lucide-react"
+import { MapPin, Mail, Linkedin, Phone } from "lucide-react"
 import SectionHeading from "@/components/ui/section-heading"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -63,22 +63,22 @@ export default function Contact() {
 
   const contactLinks = [
     {
-      icon: <Linkedin className="h-6 w-6" />,
-      label: "LinkedIn",
-      href: "https://www.linkedin.com/in/i-asad/",
-      text: "Connect with me",
-    },
-    {
-      icon: <Github className="h-6 w-6" />,
-      label: "GitHub",
-      href: "https://github.com",
-      text: "View my code",
-    },
-    {
       icon: <Mail className="h-6 w-6" />,
       label: "Email",
       href: "mailto:asad@asadcodes.com",
-      text: "Send me an email",
+      text: "asad@asadcodes.com",
+    },
+    {
+      icon: <Linkedin className="h-6 w-6" />,
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/i-asad/",
+      text: "linkedin.com/in/i-asad",
+    },
+    {
+      icon: <Github className="h-6 w-6" />,
+      label: "Phone",
+      href: "tel:+923000420605",
+      text: "+92 (300) 0420605",
     },
   ]
 
@@ -111,7 +111,7 @@ export default function Contact() {
                 className="flex items-center gap-4 p-4 bg-gray-900/30 backdrop-blur-sm border border-blue-500/20 rounded-lg hover:border-blue-500/40 hover:bg-gray-900/50 transition-all duration-300 group"
               >
                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400 group-hover:bg-blue-500/30 transition-all">
-                  {link.icon}
+                  {link.label === "Phone" ? <Phone className="h-6 w-6" /> : link.icon}
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-100">{link.label}</h4>

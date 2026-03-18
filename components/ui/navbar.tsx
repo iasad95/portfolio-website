@@ -7,9 +7,10 @@ import { cn } from "@/lib/utils"
 
 const navItems = [
   { name: "About", href: "#about" },
+  { name: "Experience", href: "#experience" },
   { name: "Skills", href: "#skills" },
+  { name: "Certifications", href: "#certifications" },
   { name: "Projects", href: "#projects" },
-  { name: "Achievements", href: "#achievements" },
   { name: "Contact", href: "#contact" },
 ]
 
@@ -37,9 +38,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link
             href="/"
-            className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-200 hover:opacity-80 transition-opacity"
+            className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200 hover:opacity-80 transition-opacity"
           >
-            AJ
+            Asad
           </Link>
 
           {/* Desktop Navigation */}
