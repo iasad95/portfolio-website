@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState, useEffect } from "react"
-import { MapPin, Mail, Linkedin, Phone } from "lucide-react"
+import { MapPin, Mail, Linkedin, Phone, Globe } from "lucide-react"
 import SectionHeading from "@/components/ui/section-heading"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -69,6 +69,12 @@ export default function Contact() {
       text: "asad@asadcodes.com",
     },
     {
+      icon: <Globe className="h-6 w-6" />,
+      label: "Website",
+      href: "https://asadcodes.com",
+      text: "asadcodes.com",
+    },
+    {
       icon: <Linkedin className="h-6 w-6" />,
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/i-asad/",
@@ -111,7 +117,7 @@ export default function Contact() {
                 className="flex items-center gap-4 p-4 bg-gray-900/30 backdrop-blur-sm border border-blue-500/20 rounded-lg hover:border-blue-500/40 hover:bg-gray-900/50 transition-all duration-300 group"
               >
                 <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400 group-hover:bg-blue-500/30 transition-all">
-                  {link.label === "Phone" ? <Phone className="h-6 w-6" /> : link.icon}
+                  {link.icon}
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-100">{link.label}</h4>

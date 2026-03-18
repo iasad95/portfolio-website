@@ -19,13 +19,13 @@ export default function Experience() {
       duration: "Jan 2023 - Present",
       location: "Remote",
       description:
-        "Architected a unified NestJS microservices backend powering 5+ SaaS applications serving 12M+ users. Led MongoDB V1 to V2 migration (50M+ records) with zero downtime. Built CloudDrive platform supporting 500K daily file operations with RBAC and S3 integration.",
+        "Architected a unified NestJS microservices backend powering 5+ SaaS applications, serving 12M+ users, reducing backend development effort by 40%. Built the CloudDrive platform (NestJS, MongoDB) supporting 500K daily file operations with secure access (RBAC), S3 presigned URLs and thumbnail generation via AWS Lambda.",
       highlights: [
+        "Led MongoDB V1 to V2 migration (50M+ records) with zero downtime",
         "Reduced API latency by 45% using BullMQ + RabbitMQ",
-        "Cut backend development effort by 40%",
-        "Implemented distributed queue system",
-        "Built HRM backend with CQRS architecture",
-        "Developed AI middleware for 12M+ users",
+        "Implemented distributed queue system for async workloads",
+        "Built HRM backend with CQRS architecture and TypeORM",
+        "Developed AI middleware for 12M+ users and token tracking",
         "Applied event-driven workflows with AWS EventBridge"
       ],
     },
@@ -35,13 +35,13 @@ export default function Experience() {
       duration: "Oct 2021 - Jan 2023",
       location: "Lahore, Pakistan",
       description:
-        "Delivered enterprise Privileged Access Management (PAM) platform with credential management, session recording, and key & certificate management. Designed scalable microservices architecture with load balancing and multi-instance clustering.",
+        "Delivered an enterprise Privileged Access Management (PAM) platform (credential management, session recording, key & certificate management) used by security teams for sensitive infrastructure access. Designed and implemented a scalable microservices architecture with load balancing and multi-instance clustering, enabling high availability and reliable performance in enterprise environments.",
       highlights: [
-        "Enterprise PAM platform for security teams",
-        "Session forensics and audit capabilities",
-        "Keystroke and video recording features",
+        "Implemented session forensics and audit capabilities",
+        "Built keystroke and video recording features",
+        "Modernized legacy modules with service-oriented components",
         "Improved deployment speed by 30%",
-        "Migrated legacy modules to service-oriented components",
+        "Strengthened API security against XSS, SQL injection, attacks",
         "RevBits PAM won Gold in 2022 Globee Awards"
       ],
     },
@@ -51,14 +51,14 @@ export default function Experience() {
       duration: "Aug 2018 - Oct 2021",
       location: "Lahore, Pakistan",
       description:
-        "Developed full-stack applications for Ancera (microbial risk assessment) and Arccos Golf (sports analytics). Engineered distributed, resource-intensive systems for scientific data processing and sports performance analytics.",
+        "Developed full-stack application for Ancera (microbial risk assessment), enabling automated detection pipelines that reduced processing time by 50% for enterprise use. Engineered and optimized distributed, resource-intensive systems for scientific data processing, improving throughput and fault tolerance for large batch analytics.",
       highlights: [
         "Built automated detection pipelines reducing processing time by 50%",
-        "Optimized distributed systems for large batch analytics",
         "Implemented automated CI/CD pipelines with 2x release frequency",
-        "Improved Arccos features that boosted shot strategy outcomes by 40%",
+        "Achieved 30% reduction in environment-related downtime",
+        "Collaborated on Arccos Golf platform improving shot strategy by 40%",
         "Arccos Golf ranked #3 in sports innovation",
-        "Enhanced developer productivity across teams"
+        "Optimized internal NPM packages and components for productivity"
       ],
     },
   ]

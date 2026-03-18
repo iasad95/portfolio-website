@@ -20,13 +20,13 @@ export default function Skills() {
     },
     {
       icon: <Code2 className="h-6 w-6" />,
-      title: "Frontend",
-      skills: ["React", "Angular", "Redux", "NgRx", "RxJS", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"],
+      title: "Backend",
+      skills: ["Node.js", "NestJS", "Express.js", "REST APIs", "GraphQL"],
     },
     {
-      icon: <Database className="h-6 w-6" />,
-      title: "Backend",
-      skills: ["Node.js", "NestJS", "Express.js", "REST APIs", "GraphQL", "Microservices", "Event-Driven Architecture", "CQRS"],
+      icon: <Code2 className="h-6 w-6" />,
+      title: "Frontend",
+      skills: ["React", "Angular", "Redux", "NgRx", "RxJS", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"],
     },
     {
       icon: <Database className="h-6 w-6" />,
@@ -40,13 +40,13 @@ export default function Skills() {
     },
     {
       icon: <Brain className="h-6 w-6" />,
-      title: "Architecture & Design",
-      skills: ["Microservices", "Distributed Systems", "Event-Driven Architecture", "CQRS", "API Gateway", "System Design", "Serverless Solutions"],
+      title: "Architecture",
+      skills: ["Microservices", "Distributed Systems", "Event-Driven Architecture", "CQRS", "API Gateway", "System Design"],
     },
     {
       icon: <Zap className="h-6 w-6" />,
       title: "Testing & Tools",
-      skills: ["Jest", "Cypress", "Unit Testing", "Integration Testing", "TDD", "BDD", "Git", "GitHub", "Jira", "Swagger", "OpenAPI", "PM2"],
+      skills: ["Jest", "Cypress", "Unit Testing", "Integration Testing", "TDD", "BDD Practices", "Git", "GitHub Actions", "Jenkins", "Bitbucket", "Jira", "Swagger", "OpenAPI", "PM2"],
     },
   ]
 
