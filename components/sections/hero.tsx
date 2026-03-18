@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export default function Hero() {
@@ -54,6 +54,15 @@ export default function Hero() {
           >
             Explore My Work
           </Link>
+          <a
+            href="/resume/asad-resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-gray-800/50 hover:bg-gray-700/50 text-blue-400 border border-blue-500/30 font-medium px-8 py-3 rounded-lg transition-all duration-300"
+          >
+            <FileText className="h-5 w-5" />
+            View Resume
+          </a>
           <a
             href="https://www.linkedin.com/in/i-asad/"
             target="_blank"
