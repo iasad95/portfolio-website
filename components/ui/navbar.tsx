@@ -6,11 +6,10 @@ import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-  { name: "About", href: "#about" },
+  { name: "What I Build", href: "#what-i-build" },
+  { name: "Impact", href: "#projects" },
   { name: "Experience", href: "#experience" },
   { name: "Skills", href: "#skills" },
-  { name: "Certifications", href: "#certifications" },
-  { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ]
 
@@ -49,7 +48,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-teal-400 transition-colors duration-200"
+                className="text-gray-300 hover:text-blue-400 transition-colors duration-200 text-sm font-medium"
               >
                 {item.name}
               </Link>
@@ -58,7 +57,7 @@ export default function Navbar() {
 
           {/* Mobile Navigation Toggle */}
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-teal-400 transition-colors">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-blue-400 transition-colors">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -73,7 +72,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block py-2 text-gray-300 hover:text-teal-400 transition-colors"
+                className="block py-2 text-gray-300 hover:text-blue-400 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
