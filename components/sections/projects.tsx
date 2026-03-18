@@ -94,7 +94,7 @@ export default function Projects() {
       <SectionHeading title="Impact Delivered" subtitle="High-leverage systems at scale" />
 
       <motion.div
-        className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto"
+        className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto px-4"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -108,7 +108,7 @@ export default function Projects() {
               whileHover={{ y: -4 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/5 backdrop-blur-sm border border-blue-500/20 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 h-full cursor-pointer group">
+              <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/5 backdrop-blur-sm border border-blue-500/20 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 h-full cursor-pointer group flex flex-col">
                 <div className="flex justify-between items-start gap-4 mb-3">
                   <h3 className="text-lg font-bold text-gray-100 group-hover:text-blue-300 transition-colors">
                     {project.title}
@@ -118,7 +118,7 @@ export default function Projects() {
                   </span>
                 </div>
 
-                <div className="space-y-2 mb-4">
+                <div className="space-y-2 mb-4 flex-grow">
                   <p className="text-sm text-gray-400">
                     <span className="text-blue-400 font-semibold">Problem:</span> {project.problem}
                   </p>
@@ -127,7 +127,7 @@ export default function Projects() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2 mb-4">
+                <div className="grid grid-cols-2 gap-2 mb-4 mt-auto">
                   {project.metrics.map((metric, i) => {
                     const Icon = metric.icon
                     return (

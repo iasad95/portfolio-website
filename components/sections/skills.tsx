@@ -44,17 +44,22 @@ export default function Skills() {
       skills: ["Microservices", "Distributed Systems", "Event-Driven Architecture", "CQRS", "API Gateway", "System Design"],
     },
     {
+      icon: <Code2 className="h-6 w-6" />,
+      title: "Testing",
+      skills: ["Jest", "Cypress", "Unit Testing", "Integration Testing", "TDD", "BDD Practices"],
+    },
+    {
       icon: <Zap className="h-6 w-6" />,
-      title: "Testing & Tools",
-      skills: ["Jest", "Cypress", "Unit Testing", "Integration Testing", "TDD", "BDD Practices", "Git", "GitHub Actions", "Jenkins", "Bitbucket", "Jira", "Swagger", "OpenAPI", "PM2"],
+      title: "Tools",
+      skills: ["Git", "GitHub Actions", "Jenkins", "Bitbucket", "Jira", "Swagger", "OpenAPI", "PM2"],
     },
   ]
 
   return (
-    <section id="skills" className="py-20 relative scroll-mt-16 px-4">
+    <section id="skills" className="py-24 relative scroll-mt-16 px-4">
       <SectionHeading title="Skills & Expertise" subtitle="Technologies I work with" />
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
         {skillCategories.map((category, index) => (
           <div
             key={index}
