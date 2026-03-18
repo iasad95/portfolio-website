@@ -11,10 +11,10 @@ export default function Hero() {
   const [isTyping, setIsTyping] = useState(true)
   
   const valuePropStatements = [
-    "Building scalable SaaS systems",
-    "Architecting microservices",
-    "Optimizing for performance",
-    "Designing systems at scale"
+    "Architecting microservices for scale",
+    "Reducing API latency by 45%",
+    "Building distributed systems",
+    "Designing event-driven architectures"
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -143,8 +143,7 @@ export default function Hero() {
           </Link>
           <a
             href="/resume/asad-resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            download="Asad-Resume.pdf"
             className="inline-flex items-center gap-2 bg-gray-800/50 hover:bg-gray-800 text-blue-400 border border-blue-500/30 font-semibold px-8 py-3 rounded-lg transition-all duration-300 backdrop-blur-sm hover:border-blue-500/60 hover:scale-105"
           >
             <FileText className="h-4 w-4" />

@@ -40,7 +40,8 @@ export default function About() {
     <section id="about" className="py-20 relative scroll-mt-16 px-4">
       <SectionHeading title="About Me" subtitle="Get to know my background and expertise" />
 
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
         <div
           className={cn(
             "relative opacity-0 transform -translate-x-8 transition-all duration-1000",
@@ -94,6 +95,7 @@ export default function About() {
               </div>
             ))}
           </div>
+        </div>
         </div>
       </div>
     </section>
