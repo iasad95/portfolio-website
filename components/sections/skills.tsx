@@ -15,23 +15,38 @@ export default function Skills() {
   const skillCategories = [
     {
       icon: <Code2 className="h-6 w-6" />,
+      title: "Languages",
+      skills: ["JavaScript", "TypeScript"],
+    },
+    {
+      icon: <Code2 className="h-6 w-6" />,
+      title: "Backend",
+      skills: ["Node.js", "NestJS", "Express.js", "REST APIs", "GraphQL"],
+    },
+    {
+      icon: <Code2 className="h-6 w-6" />,
       title: "Frontend",
-      skills: ["React", "Angular", "Vue.js", "TypeScript", "HTML5", "CSS3", "Bootstrap", "Tailwind CSS"],
+      skills: ["React", "Angular", "Redux", "NgRx", "RxJS", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"],
     },
     {
       icon: <Database className="h-6 w-6" />,
-      title: "Backend",
-      skills: ["Node.js", "Express", "NestJS", "REST APIs", "GraphQL", "Microservices", "SQL", "NoSQL"],
+      title: "Databases",
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "MSSQL", "Redis"],
     },
     {
       icon: <Zap className="h-6 w-6" />,
-      title: "Tools & DevOps",
-      skills: ["Git", "Docker", "GitHub", "Jira", "CI/CD", "Bitbucket", "NPM", "Webpack"],
+      title: "Cloud & DevOps",
+      skills: ["AWS (Lambda, S3, EventBridge, EC2, IAM, SQS, SNS, RDS)", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Jenkins"],
     },
     {
       icon: <Brain className="h-6 w-6" />,
-      title: "Specializations",
-      skills: ["Microservices Architecture", "Scalable Systems", "Security", "Performance Optimization", "Agile/SDLC"],
+      title: "Architecture",
+      skills: ["Microservices", "Distributed Systems", "Event-Driven Architecture", "CQRS", "API Gateway", "System Design"],
+    },
+    {
+      icon: <Zap className="h-6 w-6" />,
+      title: "Testing & Tools",
+      skills: ["Jest", "Cypress", "Unit Testing", "Integration Testing", "TDD", "BDD Practices", "Git", "GitHub Actions", "Jenkins", "Bitbucket", "Jira", "Swagger", "OpenAPI", "PM2"],
     },
   ]
 

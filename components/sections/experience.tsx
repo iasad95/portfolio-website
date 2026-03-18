@@ -15,30 +15,51 @@ export default function Experience() {
   const experiences = [
     {
       company: "Biztree",
-      position: "Software Engineer",
-      duration: "Jan 2023 - Present (2+ years)",
-      location: "Pakistan",
+      position: "Senior Software Engineer",
+      duration: "Jan 2023 - Present",
+      location: "Remote",
       description:
-        "Building scalable web applications and leading technical initiatives. Collaborating with cross-functional teams to deliver high-quality solutions.",
-      highlights: ["Full-stack development", "System architecture", "Technical leadership"],
+        "Architected a unified NestJS microservices backend powering 5+ SaaS applications, serving 12M+ users, reducing backend development effort by 40%. Built the CloudDrive platform (NestJS, MongoDB) supporting 500K daily file operations with secure access (RBAC), S3 presigned URLs and thumbnail generation via AWS Lambda.",
+      highlights: [
+        "Led MongoDB V1 to V2 migration (50M+ records) with zero downtime",
+        "Reduced API latency by 45% using BullMQ + RabbitMQ",
+        "Implemented distributed queue system for async workloads",
+        "Built HRM backend with CQRS architecture and TypeORM",
+        "Developed AI middleware for 12M+ users and token tracking",
+        "Applied event-driven workflows with AWS EventBridge"
+      ],
     },
     {
       company: "InvoZone",
-      position: "Software Engineer",
+      position: "Senior Software Engineer",
       duration: "Oct 2021 - Jan 2023",
       location: "Lahore, Pakistan",
       description:
-        "Delivered Privileged Access Management solutions with RevBits, implementing microservices architecture and cyber security features.",
-      highlights: ["Microservices architecture", "Security implementation", "Legacy code migration"],
+        "Delivered an enterprise Privileged Access Management (PAM) platform (credential management, session recording, key & certificate management) used by security teams for sensitive infrastructure access. Designed and implemented a scalable microservices architecture with load balancing and multi-instance clustering, enabling high availability and reliable performance in enterprise environments.",
+      highlights: [
+        "Implemented session forensics and audit capabilities",
+        "Built keystroke and video recording features",
+        "Modernized legacy modules with service-oriented components",
+        "Improved deployment speed by 30%",
+        "Strengthened API security against XSS, SQL injection, attacks",
+        "RevBits PAM won Gold in 2022 Globee Awards"
+      ],
     },
     {
       company: "TenX",
       position: "Software Engineer",
-      duration: "Aug 2019 - Oct 2021",
+      duration: "Aug 2018 - Oct 2021",
       location: "Lahore, Pakistan",
       description:
-        "Built large-scale distributed systems for Ancera and Arccos. Developed golf performance tracking system with Microsoft and optimized microbial detection by 90%.",
-      highlights: ["Distributed systems", "Performance optimization", "Microsoft partnership"],
+        "Developed full-stack application for Ancera (microbial risk assessment), enabling automated detection pipelines that reduced processing time by 50% for enterprise use. Engineered and optimized distributed, resource-intensive systems for scientific data processing, improving throughput and fault tolerance for large batch analytics.",
+      highlights: [
+        "Built automated detection pipelines reducing processing time by 50%",
+        "Implemented automated CI/CD pipelines with 2x release frequency",
+        "Achieved 30% reduction in environment-related downtime",
+        "Collaborated on Arccos Golf platform improving shot strategy by 40%",
+        "Arccos Golf ranked #3 in sports innovation",
+        "Optimized internal NPM packages and components for productivity"
+      ],
     },
   ]
 
