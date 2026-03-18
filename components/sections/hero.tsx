@@ -39,8 +39,8 @@ export default function Hero() {
         </div>
 
         <div className="space-y-2">
-          <p className="text-xl md:text-2xl text-gray-300 font-medium">Full Stack Developer</p>
-          <p className="text-lg text-gray-400">JavaScript • React • Angular • Node.js • TypeScript • Microservices</p>
+          <p className="text-xl md:text-2xl text-gray-300 font-medium">Senior Software Engineer</p>
+          <p className="text-lg text-gray-400">JavaScript • React • Angular • Node.js • TypeScript • Microservices • AWS</p>
         </div>
 
         <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
