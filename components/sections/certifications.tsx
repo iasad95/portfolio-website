@@ -35,7 +35,7 @@ export default function Certifications() {
     <section id="certifications" className="py-20 relative scroll-mt-16 px-4">
       <SectionHeading title="Certifications & Awards" subtitle="Professional credentials and recognition" />
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <h3 className="text-2xl font-bold text-gray-100 mb-6">Certifications</h3>
         <div className="space-y-6 mb-12">
           {certifications.map((cert, index) => (
