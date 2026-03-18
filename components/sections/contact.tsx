@@ -75,7 +75,7 @@ export default function Contact() {
       text: "linkedin.com/in/i-asad",
     },
     {
-      icon: <Github className="h-6 w-6" />,
+      icon: <Phone className="h-6 w-6" />,
       label: "Phone",
       href: "tel:+923000420605",
       text: "+92 (300) 0420605",
