@@ -16,16 +16,16 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Auto-Sports Platform",
-      problem: "Clubs needed intelligent scheduling without manual coordination",
-      solution: "Built AI-powered platform with GPS tracking and resource optimization",
+      title: "Biztree Business-in-a-Box",
+      problem: "Businesses needed unified SaaS platform without complex integrations",
+      solution: "Architected NestJS microservices backend powering 5+ integrated applications",
       description:
-        "AI-powered sports club management system with intelligent scheduling, resource management, and real-time club tracking via GPS. Achieved 30% revenue increase and 80% resource availability.",
-      tech: ["Angular", "NestJS", "MySQL", "GPS Tracking"],
-      year: "2018-2019",
+        "Unified microservices backend serving 12M+ users across Biztree's SaaS ecosystem. Reduced API latency by 45% using BullMQ + RabbitMQ, cut backend development effort by 40%, and enabled zero-downtime migration of 50M+ MongoDB records.",
+      tech: ["NestJS", "React", "MongoDB", "AWS", "Microservices"],
+      year: "2023-Present",
       metrics: [
-        { label: "Revenue Lift", value: "30%", icon: TrendingUp },
-        { label: "Resource Available", value: "80%", icon: Users },
+        { label: "API Latency", value: "45% ↓", icon: TrendingUp },
+        { label: "Users Served", value: "12M+", icon: Users },
       ],
     },
     {
@@ -104,11 +104,12 @@ export default function Projects() {
           <motion.div key={index} variants={itemVariants}>
             <motion.button
               onClick={() => setExpandedId(expandedId === index ? null : index)}
-              className="w-full text-left"
-              whileHover={{ y: -4 }}
+              className="w-full text-left group"
+              whileHover={{ y: -8 }}
+              whileTap={{ y: -4 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/5 backdrop-blur-sm border border-blue-500/20 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 h-full cursor-pointer group flex flex-col">
+              <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/5 backdrop-blur-sm border border-blue-500/20 rounded-xl p-6 hover:border-blue-500/50 hover:bg-gradient-to-br hover:from-blue-500/15 hover:to-cyan-500/10 transition-all duration-300 h-full min-h-[420px] cursor-pointer group flex flex-col shadow-lg hover:shadow-blue-500/20">
                 <div className="flex justify-between items-start gap-4 mb-3">
                   <h3 className="text-lg font-bold text-gray-100 group-hover:text-blue-300 transition-colors">
                     {project.title}
