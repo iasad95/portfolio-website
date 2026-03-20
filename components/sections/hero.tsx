@@ -24,25 +24,24 @@ export default function Hero() {
     let charIndex = 0
     let typingInterval: NodeJS.Timeout
 
-    if (isTyping && charIndex < currentStatement.length) {
+    if (isTyping) {
+      setDisplayText("")
       typingInterval = setInterval(() => {
-        setDisplayText((prev) => prev + currentStatement[charIndex])
+        setDisplayText(currentStatement.substring(0, charIndex + 1))
         charIndex++
         if (charIndex === currentStatement.length) {
           setIsTyping(false)
         }
       }, 50)
-    } else if (!isTyping) {
+      return () => clearInterval(typingInterval)
+    } else {
       const pauseTimeout = setTimeout(() => {
-        setIsTyping(true)
-        setDisplayText("")
         setCurrentIndex((prev) => (prev + 1) % valuePropStatements.length)
+        setIsTyping(true)
       }, 3000)
       return () => clearTimeout(pauseTimeout)
     }
-
-    return () => clearInterval(typingInterval)
-  }, [isTyping, currentIndex])
+  }, [isTyping, currentIndex, valuePropStatements])
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -152,31 +151,37 @@ export default function Hero() {
         </motion.div>
 
         <motion.div variants={itemVariants} className="flex justify-center gap-6 pt-4">
-          <a
+          <motion.a
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition-all hover:scale-125"
+            className="text-gray-400 hover:text-blue-400 transition-all"
             aria-label="GitHub"
+            whileHover={{ scale: 1.3, rotate: 5 }}
+            whileTap={{ scale: 0.95 }}
           >
             <Github className="h-6 w-6" />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.linkedin.com/in/i-asad/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition-all hover:scale-125"
+            className="text-gray-400 hover:text-blue-400 transition-all"
             aria-label="LinkedIn"
+            whileHover={{ scale: 1.3, rotate: -5 }}
+            whileTap={{ scale: 0.95 }}
           >
             <Linkedin className="h-6 w-6" />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="mailto:asad@asadcodes.com"
-            className="text-gray-400 hover:text-blue-400 transition-all hover:scale-125"
+            className="text-gray-400 hover:text-blue-400 transition-all"
             aria-label="Email"
+            whileHover={{ scale: 1.3, rotate: 5 }}
+            whileTap={{ scale: 0.95 }}
           >
             <Mail className="h-6 w-6" />
-          </a>
+          </motion.a>
         </motion.div>
       </motion.div>
 
