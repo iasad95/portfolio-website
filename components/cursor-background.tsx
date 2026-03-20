@@ -9,16 +9,8 @@ interface Particle {
   vy: number
   life: number
   maxLife: number
-  radius: number
-  opacity: number
-  type: "light" | "gradient"
-}
-
-interface MagneticField {
-  x: number
-  y: number
-  strength: number
-  fade: number
+  size: number
+  type: "light" | "bright"
 }
 
 export function CursorBackground() {
@@ -28,15 +20,12 @@ export function CursorBackground() {
   const mouseVX = useRef(0)
   const mouseVY = useRef(0)
   const particles = useRef<Particle[]>([])
-  const magneticFields = useRef<MagneticField[]>([])
-  const lastMouseX = useRef(0)
-  const lastMouseY = useRef(0)
 
   useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
 
-    const ctx = canvas.getContext("2d", { alpha: true })
+    const ctx = canvas.getContext("2d")
     if (!ctx) return
 
     // Set canvas size
@@ -47,7 +36,11 @@ export function CursorBackground() {
     resizeCanvas()
     window.addEventListener("resize", resizeCanvas)
 
-    // Track mouse movement
+    // Initialize mouse position
+    mouseX.current = window.innerWidth / 2
+    mouseY.current = window.innerHeight / 2
+
+    // Track mouse movement with playful particle creation
     const handleMouseMove = (e: MouseEvent) => {
       const prevX = mouseX.current
       const prevY = mouseY.current
@@ -59,51 +52,43 @@ export function CursorBackground() {
       mouseVY.current = mouseY.current - prevY
 
       // Create premium smooth particles on movement
-      const speed = Math.sqrt(mouseVX.current ** 2 + mouseVX.current ** 2)
-      if (speed > 0.5) {
-        // Create elegant light particles
-        for (let i = 0; i < 2; i++) {
+      const speed = Math.sqrt(mouseVX.current ** 2 + mouseVY.current ** 2)
+
+      // More particles on faster movement for playful feel
+      if (speed > 0.1) {
+        const particleCount = Math.min(4, Math.ceil(speed / 3))
+
+        for (let i = 0; i < particleCount; i++) {
+          const angle = Math.atan2(mouseVY.current, mouseVX.current) + (Math.random() - 0.5) * 0.5
+          const particleSpeed = 1 + Math.random() * 1.5
+
           particles.current.push({
-            x: mouseX.current,
-            y: mouseY.current,
-            vx: mouseVX.current * 0.3 + (Math.random() - 0.5) * 1,
-            vy: mouseVY.current * 0.3 + (Math.random() - 0.5) * 1,
+            x: mouseX.current + (Math.random() - 0.5) * 8,
+            y: mouseY.current + (Math.random() - 0.5) * 8,
+            vx: Math.cos(angle) * particleSpeed,
+            vy: Math.sin(angle) * particleSpeed,
             life: 1,
-            maxLife: 1.5,
-            radius: Math.random() * 1.5 + 0.5,
-            opacity: 0.6,
-            type: "light",
+            maxLife: 2,
+            size: Math.random() * 1.5 + 0.8,
+            type: Math.random() > 0.6 ? "bright" : "light",
           })
         }
-
-        // Add magnetic field effect
-        magneticFields.current.push({
-          x: mouseX.current,
-          y: mouseY.current,
-          strength: Math.min(80, speed * 10),
-          fade: 0,
-        })
       }
-
-      lastMouseX.current = mouseX.current
-      lastMouseY.current = mouseY.current
     }
 
-    // Premium click effect - elegant expansion
+    // Premium click effect - radial expansion
     const handleMouseClick = () => {
-      for (let i = 0; i < 8; i++) {
-        const angle = (i / 8) * Math.PI * 2
-        const velocity = 2.5
+      for (let i = 0; i < 12; i++) {
+        const angle = (i / 12) * Math.PI * 2
         particles.current.push({
           x: mouseX.current,
           y: mouseY.current,
-          vx: Math.cos(angle) * velocity,
-          vy: Math.sin(angle) * velocity,
+          vx: Math.cos(angle) * 3,
+          vy: Math.sin(angle) * 3,
           life: 1,
-          maxLife: 1.2,
-          radius: Math.random() * 2 + 1,
-          opacity: 0.8,
-          type: "gradient",
+          maxLife: 1.5,
+          size: Math.random() * 2 + 1,
+          type: "bright",
         })
       }
     }
@@ -114,34 +99,9 @@ export function CursorBackground() {
     // Animation loop
     let animationId: number
     const animate = () => {
-      // Ultra subtle clear - preserves motion trails for premium feel
-      ctx.fillStyle = "rgba(3, 10, 20, 0.08)"
+      // Very subtle fade for motion trail effect
+      ctx.fillStyle = "rgba(3, 10, 20, 0.06)"
       ctx.fillRect(0, 0, canvas.width, canvas.height)
-
-      // Update magnetic fields
-      for (let i = magneticFields.current.length - 1; i >= 0; i--) {
-        const field = magneticFields.current[i]
-        field.fade += 0.03
-
-        if (field.fade > 1) {
-          magneticFields.current.splice(i, 1)
-        }
-      }
-
-      // Apply magnetic forces to particles
-      for (const particle of particles.current) {
-        for (const field of magneticFields.current) {
-          const dx = field.x - particle.x
-          const dy = field.y - particle.y
-          const distance = Math.sqrt(dx * dx + dy * dy)
-
-          if (distance < field.strength) {
-            const force = (1 - distance / field.strength) * 0.3 * (1 - field.fade)
-            particle.vx += (dx / distance) * force
-            particle.vy += (dy / distance) * force
-          }
-        }
-      }
 
       // Update and draw particles
       for (let i = particles.current.length - 1; i >= 0; i--) {
@@ -149,48 +109,48 @@ export function CursorBackground() {
 
         particle.x += particle.vx
         particle.y += particle.vy
-        particle.vy += 0.05 // Very subtle gravity
+        particle.vy += 0.04 // subtle gravity
 
-        particle.vx *= 0.98
-        particle.vy *= 0.98
+        particle.vx *= 0.96 // friction
+        particle.vy *= 0.96
 
         particle.life -= 1 / (particle.maxLife * 60)
-
-        const alphaMul = Math.max(0, particle.life)
+        const alphaMul = Math.max(0, Math.min(1, particle.life))
 
         if (particle.type === "light") {
-          // Elegant soft glow
+          // Soft glow particles
+          const glowSize = particle.size * 4
           const gradient = ctx.createRadialGradient(
             particle.x,
             particle.y,
             0,
             particle.x,
             particle.y,
-            particle.radius * 3
+            glowSize
           )
-          gradient.addColorStop(0, `rgba(79, 172, 254, ${0.4 * alphaMul})`)
-          gradient.addColorStop(0.7, `rgba(79, 172, 254, ${0.1 * alphaMul})`)
+          gradient.addColorStop(0, `rgba(79, 172, 254, ${0.35 * alphaMul})`)
+          gradient.addColorStop(0.5, `rgba(79, 172, 254, ${0.1 * alphaMul})`)
           gradient.addColorStop(1, `rgba(79, 172, 254, 0)`)
 
           ctx.fillStyle = gradient
           ctx.fillRect(
-            particle.x - particle.radius * 3,
-            particle.y - particle.radius * 3,
-            particle.radius * 6,
-            particle.radius * 6
+            particle.x - glowSize,
+            particle.y - glowSize,
+            glowSize * 2,
+            glowSize * 2
           )
-        } else if (particle.type === "gradient") {
-          // Premium bright particle
-          ctx.fillStyle = `rgba(79, 172, 254, ${0.6 * alphaMul})`
+        } else {
+          // Bright core particles
+          ctx.fillStyle = `rgba(100, 200, 255, ${0.7 * alphaMul})`
           ctx.beginPath()
-          ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2)
+          ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
           ctx.fill()
 
-          // Subtle outer glow
-          ctx.strokeStyle = `rgba(147, 197, 253, ${0.3 * alphaMul})`
-          ctx.lineWidth = 0.5
+          // Outer glow ring
+          ctx.strokeStyle = `rgba(79, 172, 254, ${0.4 * alphaMul})`
+          ctx.lineWidth = 0.8
           ctx.beginPath()
-          ctx.arc(particle.x, particle.y, particle.radius * 1.5, 0, Math.PI * 2)
+          ctx.arc(particle.x, particle.y, particle.size * 1.8, 0, Math.PI * 2)
           ctx.stroke()
         }
 
@@ -199,34 +159,43 @@ export function CursorBackground() {
         }
       }
 
-      // Premium cursor indicator - smooth breathing pulse
-      const pulseSize = 6 + Math.sin(Date.now() * 0.003) * 1.5
-      const cursorGradient = ctx.createRadialGradient(
+      // Premium breathing cursor ring - the main interactive element
+      const time = Date.now() * 0.002
+      const breathe = 1 + Math.sin(time) * 0.3
+      const cursorRingSize = 12 * breathe
+
+      // Outer pulsing ring
+      ctx.strokeStyle = `rgba(79, 172, 254, ${0.25 + Math.sin(time * 1.2) * 0.12})`
+      ctx.lineWidth = 1.5
+      ctx.beginPath()
+      ctx.arc(mouseX.current, mouseY.current, cursorRingSize, 0, Math.PI * 2)
+      ctx.stroke()
+
+      // Inner ring
+      ctx.strokeStyle = `rgba(147, 197, 253, ${0.18 + Math.cos(time * 0.8) * 0.09})`
+      ctx.lineWidth = 1
+      ctx.beginPath()
+      ctx.arc(mouseX.current, mouseY.current, cursorRingSize * 0.5, 0, Math.PI * 2)
+      ctx.stroke()
+
+      // Center glow
+      const centerGlow = ctx.createRadialGradient(
         mouseX.current,
         mouseY.current,
         0,
         mouseX.current,
         mouseY.current,
-        pulseSize * 2.5
+        cursorRingSize * 0.6
       )
-      cursorGradient.addColorStop(0, "rgba(79, 172, 254, 0.25)")
-      cursorGradient.addColorStop(0.4, "rgba(79, 172, 254, 0.08)")
-      cursorGradient.addColorStop(1, "rgba(79, 172, 254, 0)")
-
-      ctx.fillStyle = cursorGradient
+      centerGlow.addColorStop(0, "rgba(79, 172, 254, 0.15)")
+      centerGlow.addColorStop(1, "rgba(79, 172, 254, 0)")
+      ctx.fillStyle = centerGlow
       ctx.fillRect(
-        mouseX.current - pulseSize * 2.5,
-        mouseY.current - pulseSize * 2.5,
-        pulseSize * 5,
-        pulseSize * 5
+        mouseX.current - cursorRingSize * 0.6,
+        mouseY.current - cursorRingSize * 0.6,
+        cursorRingSize * 1.2,
+        cursorRingSize * 1.2
       )
-
-      // Elegant cursor ring
-      ctx.strokeStyle = `rgba(79, 172, 254, ${0.15 + Math.sin(Date.now() * 0.002) * 0.08})`
-      ctx.lineWidth = 1.2
-      ctx.beginPath()
-      ctx.arc(mouseX.current, mouseY.current, pulseSize, 0, Math.PI * 2)
-      ctx.stroke()
 
       animationId = requestAnimationFrame(animate)
     }
