@@ -84,13 +84,13 @@ export function CursorBackground() {
         }
       }
 
-      // Draw glow circle at cursor
-      const gradient = ctx.createRadialGradient(mouseX.current, mouseY.current, 0, mouseX.current, mouseY.current, 80)
-      gradient.addColorStop(0, "rgba(79, 172, 254, 0.3)")
+      // Draw subtle glow circle at cursor
+      const gradient = ctx.createRadialGradient(mouseX.current, mouseY.current, 0, mouseX.current, mouseY.current, 40)
+      gradient.addColorStop(0, "rgba(79, 172, 254, 0.12)")
       gradient.addColorStop(1, "rgba(79, 172, 254, 0)")
 
       ctx.fillStyle = gradient
-      ctx.fillRect(mouseX.current - 80, mouseY.current - 80, 160, 160)
+      ctx.fillRect(mouseX.current - 40, mouseY.current - 40, 80, 80)
 
       requestAnimationFrame(animate)
     }

@@ -22,26 +22,25 @@ export default function Hero() {
   useEffect(() => {
     const currentStatement = valuePropStatements[currentIndex]
     let charIndex = 0
-    let typingInterval: NodeJS.Timeout
 
-    if (isTyping && charIndex < currentStatement.length) {
-      typingInterval = setInterval(() => {
-        setDisplayText((prev) => prev + currentStatement[charIndex])
+    if (isTyping) {
+      const typingInterval = setInterval(() => {
         charIndex++
-        if (charIndex === currentStatement.length) {
+        setDisplayText(currentStatement.slice(0, charIndex))
+        if (charIndex >= currentStatement.length) {
           setIsTyping(false)
+          clearInterval(typingInterval)
         }
-      }, 50)
-    } else if (!isTyping) {
-      const pauseTimeout = setTimeout(() => {
-        setIsTyping(true)
-        setDisplayText("")
+      }, 60)
+      return () => clearInterval(typingInterval)
+    } else {
+      const delayTimeout = setTimeout(() => {
         setCurrentIndex((prev) => (prev + 1) % valuePropStatements.length)
-      }, 3000)
-      return () => clearTimeout(pauseTimeout)
+        setDisplayText("")
+        setIsTyping(true)
+      }, 2500)
+      return () => clearTimeout(delayTimeout)
     }
-
-    return () => clearInterval(typingInterval)
   }, [isTyping, currentIndex])
 
   const containerVariants = {
@@ -121,62 +120,74 @@ export default function Hero() {
         </motion.div>
 
         <motion.div variants={itemVariants} className="space-y-3">
-          <p className="text-lg md:text-xl text-gray-300 font-medium min-h-[2rem]">
-            <span className="text-blue-400">{">"} </span>
-            {displayText}
-            {isTyping && <span className="animate-pulse">|</span>}
+          <p className="text-lg md:text-xl text-gray-200 font-medium min-h-[2.5rem] leading-relaxed">
+            <span className="text-blue-400 font-bold">{">"} </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">{displayText}</span>
+            {isTyping && <span className="animate-pulse text-blue-400">▌</span>}
           </p>
-          <p className="text-gray-500 text-sm">8+ years building distributed systems | AWS Certified | MERN • MEAN</p>
+          <p className="text-gray-400 text-sm font-medium">8+ years building distributed systems • AWS Certified • MERN • MEAN</p>
         </motion.div>
 
         <motion.p variants={itemVariants} className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
           I architect scalable SaaS platforms with microservices and event-driven systems. Proven track record: 45% latency reduction, 40% dev effort cut, 12M+ users served.
         </motion.p>
 
-        <motion.div variants={itemVariants} className="pt-6 flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
-          <Link
-            href="#projects"
-            className="group inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-          >
-            View Projects
-            <ArrowDown className="h-4 w-4 group-hover:translate-y-1 transition-transform" />
-          </Link>
-          <a
-            href="/resume/asad-resume.pdf"
-            download="Asad-Resume.pdf"
-            className="inline-flex items-center gap-2 bg-gray-800/50 hover:bg-gray-800 text-blue-400 border border-blue-500/30 font-semibold px-8 py-3 rounded-lg transition-all duration-300 backdrop-blur-sm hover:border-blue-500/60 hover:scale-105"
-          >
-            <FileText className="h-4 w-4" />
-            Resume
-          </a>
+        <motion.div variants={itemVariants} className="pt-8 flex flex-col sm:flex-row flex-wrap gap-4 justify-center">
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link
+              href="#projects"
+              className="group inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/40"
+            >
+              View Projects
+              <motion.div animate={{ y: [0, 4, 0] }} transition={{ duration: 2, repeat: Infinity }}>
+                <ArrowDown className="h-4 w-4" />
+              </motion.div>
+            </Link>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <a
+              href="/resume/asad-resume.pdf"
+              download="Asad-Resume.pdf"
+              className="inline-flex items-center gap-2 bg-gray-900/60 hover:bg-gray-900 text-blue-300 border border-blue-500/40 font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 backdrop-blur-sm hover:border-blue-400/60 hover:text-blue-200"
+            >
+              <FileText className="h-4 w-4" />
+              Download Resume
+            </a>
+          </motion.div>
         </motion.div>
 
         <motion.div variants={itemVariants} className="flex justify-center gap-6 pt-4">
-          <a
+          <motion.a
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition-all hover:scale-125"
+            className="text-gray-400 hover:text-blue-400 transition-all"
             aria-label="GitHub"
+            whileHover={{ scale: 1.3, rotate: 5 }}
+            whileTap={{ scale: 0.95 }}
           >
             <Github className="h-6 w-6" />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.linkedin.com/in/i-asad/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition-all hover:scale-125"
+            className="text-gray-400 hover:text-blue-400 transition-all"
             aria-label="LinkedIn"
+            whileHover={{ scale: 1.3, rotate: -5 }}
+            whileTap={{ scale: 0.95 }}
           >
             <Linkedin className="h-6 w-6" />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="mailto:asad@asadcodes.com"
-            className="text-gray-400 hover:text-blue-400 transition-all hover:scale-125"
+            className="text-gray-400 hover:text-blue-400 transition-all"
             aria-label="Email"
+            whileHover={{ scale: 1.3, rotate: 5 }}
+            whileTap={{ scale: 0.95 }}
           >
             <Mail className="h-6 w-6" />
-          </a>
+          </motion.a>
         </motion.div>
       </motion.div>
 
