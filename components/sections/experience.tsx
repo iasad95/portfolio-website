@@ -99,8 +99,8 @@ export default function Experience() {
                   className={cn(
                     "relative p-6 rounded-xl border transition-all duration-300 cursor-pointer group",
                     activeIndex === index
-                      ? "bg-gradient-to-r from-blue-500/20 to-cyan-500/10 border-blue-500/50 shadow-lg shadow-blue-500/20"
-                      : "bg-gray-900/40 border-blue-500/20 hover:border-blue-500/30",
+                      ? "bg-gradient-to-r from-blue-500/15 to-cyan-500/10 border-blue-500/50 shadow-lg shadow-blue-500/15"
+                      : "bg-gray-900/30 border-blue-500/20 hover:border-blue-500/40 hover:bg-gray-900/40",
                   )}
                   whileHover={{ x: 4 }}
                 >
