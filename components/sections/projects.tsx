@@ -109,26 +109,26 @@ export default function Projects() {
               whileTap={{ y: -4 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/5 backdrop-blur-sm border border-blue-500/20 rounded-xl p-6 hover:border-blue-500/50 hover:bg-gradient-to-br hover:from-blue-500/15 hover:to-cyan-500/10 transition-all duration-300 h-full min-h-[420px] cursor-pointer group flex flex-col shadow-lg hover:shadow-blue-500/20">
-                <div className="flex justify-between items-start gap-4 mb-3">
-                  <h3 className="text-lg font-bold text-gray-100 group-hover:text-blue-300 transition-colors">
+              <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/5 backdrop-blur-sm border border-blue-500/20 rounded-xl p-6 hover:border-blue-500/50 hover:bg-gradient-to-br hover:from-blue-500/15 hover:to-cyan-500/10 transition-all duration-300 h-full cursor-pointer group flex flex-col shadow-lg hover:shadow-blue-500/20">
+                <div className="flex justify-between items-start gap-4 mb-4">
+                  <h3 className="text-lg font-bold text-gray-100 group-hover:text-blue-300 transition-colors leading-snug">
                     {project.title}
                   </h3>
-                  <span className="text-xs font-medium text-blue-400 whitespace-nowrap bg-blue-500/20 px-2.5 py-1.5 rounded-full border border-blue-500/30">
+                  <span className="text-xs font-medium text-blue-400 whitespace-nowrap bg-blue-500/20 px-2.5 py-1.5 rounded-full border border-blue-500/30 flex-shrink-0">
                     {project.year}
                   </span>
                 </div>
 
-                <div className="space-y-2 mb-4 flex-grow">
-                  <p className="text-sm text-gray-400">
+                <div className="space-y-3 mb-6">
+                  <p className="text-sm text-gray-400 leading-relaxed">
                     <span className="text-blue-400 font-semibold">Problem:</span> {project.problem}
                   </p>
-                  <p className="text-sm text-gray-400">
+                  <p className="text-sm text-gray-400 leading-relaxed">
                     <span className="text-green-400 font-semibold">Solution:</span> {project.solution}
                   </p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2 mb-4 mt-auto">
+                <div className="grid grid-cols-2 gap-2 mb-5 mt-auto">
                   {project.metrics.map((metric, i) => {
                     const Icon = metric.icon
                     return (
@@ -143,11 +143,11 @@ export default function Projects() {
                   })}
                 </div>
 
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className="inline-block text-xs bg-blue-500/15 text-blue-300 px-2 py-1 rounded-full border border-blue-500/20"
+                      className="inline-block text-xs bg-blue-500/10 text-blue-300 px-3 py-1.5 rounded-lg border border-blue-500/25"
                     >
                       {tech}
                     </span>
