@@ -13,5 +13,5 @@ Along with hands-on coding, I used LLM-assisted workflows to speed up ideation, 
 
 I used **v0 by Vercel** as an AI interface generation tool to quickly prototype and refine parts of the frontend. v0 helps turn prompts into production-style React UI, which I then reviewed and customized through regular engineering practices.
 
-I deployed and hosted the project on **Vercel**
+[Open this project in v0](https://v0.app/chat/mMQfRt8bftP).
 
