@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { ArrowDown, Github, Linkedin, Mail, FileText, Sparkles } from "lucide-react"
 import { motion } from "framer-motion"
@@ -102,6 +103,24 @@ export default function Hero() {
           <motion.div
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+            className="flex justify-center mb-6"
+          >
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full blur-lg opacity-50" />
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20220821_015236-fkmtCRbCvo7wt8XHs5LmBs2saIUmL7.jpg"
+                alt="Asad - Senior Software Engineer"
+                width={120}
+                height={120}
+                className="relative rounded-full border-2 border-blue-400 shadow-lg"
+              />
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
             className="flex items-center justify-center gap-2 mb-4"
           >
@@ -158,7 +177,7 @@ export default function Hero() {
 
         <motion.div variants={itemVariants} className="flex justify-center gap-6 pt-4">
           <motion.a
-            href="https://github.com"
+            href="https://github.com/iasad95"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-blue-400 transition-all"
