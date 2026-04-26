@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const doc = new PDFDocument({ size: 'Letter', margin: 50 });
-const outputPath = path.join(__dirname, '../public/resume/asad-resume.pdf');
+const outputPath = path.join(__dirname, '../public/resume/Asad-Resume.pdf');
 
 // Ensure directory exists
 fs.mkdirSync(path.dirname(outputPath), { recursive: true });
