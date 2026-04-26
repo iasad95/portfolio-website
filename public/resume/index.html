@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asad - Resume</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.4; color: #333; }
+        .container { max-width: 8.5in; margin: 0 auto; padding: 0.5in; background: white; }
+        .header { text-align: center; margin-bottom: 0.3in; border-bottom: 1px solid #999; padding-bottom: 0.2in; }
+        .header h1 { font-size: 24px; margin-bottom: 0.1in; }
+        .header p { font-size: 10px; color: #666; }
+        .section { margin-bottom: 0.25in; }
+        .section-title { font-size: 11px; font-weight: bold; margin-bottom: 0.1in; text-transform: uppercase; border-bottom: 1px solid #999; padding-bottom: 0.05in; }
+        .job { margin-bottom: 0.15in; }
+        .job-title { font-weight: bold; font-size: 10px; }
+        .job-meta { font-size: 9px; color: #666; margin-bottom: 0.05in; }
+        .job-description { font-size: 9px; margin-left: 0.15in; }
+        .job-description li { margin-left: 0.15in; }
+        .skills { font-size: 9px; }
+        .skill-line { margin-bottom: 0.05in; }
+        @media print { body { margin: 0; padding: 0; } .container { max-width: 100%; padding: 0.5in; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Muhammad Asad</h1>
+            <p>Senior Full-Stack Developer</p>
+            <p>asad@asadcodes.com | +923164363605 | linkedin.com/in/i-asad | asadcodes.com</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Summary</div>
+            <p style="font-size: 9px;">Senior Full-Stack Developer with 8+ years of experience building and scaling SaaS platforms using Node.js, NestJS, React, Angular, TypeScript, and AWS. Strong in microservices, event-driven systems, distributed architecture, and AI-assisted development. Proven record of reducing API latency by 45%, cutting backend development effort by 40%, and delivering zero-downtime migrations for systems serving 12M+ users.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Core Skills</div>
+            <div class="skills">
+                <div class="skill-line"><strong>Backend:</strong> Node.js, NestJS, Express.js, REST APIs, GraphQL</div>
+                <div class="skill-line"><strong>Frontend:</strong> React, Angular, Redux, NgRx, RxJS, HTML5, CSS3, Tailwind CSS, Bootstrap</div>
+                <div class="skill-line"><strong>Databases:</strong> MongoDB, PostgreSQL, MySQL, MSSQL, Redis</div>
+                <div class="skill-line"><strong>Cloud & DevOps:</strong> AWS, Lambda, S3, EventBridge, EC2, IAM, SQS, SNS, RDS, Docker, Kubernetes, CI/CD</div>
+                <div class="skill-line"><strong>Architecture:</strong> Microservices, Distributed Systems, Event-Driven Architecture, CQRS, System Design</div>
+                <div class="skill-line"><strong>AI / LLM Tools:</strong> Claude, Cursor, AI-assisted development, AI middleware, Document workflows</div>
+                <div class="skill-line"><strong>Testing:</strong> Jest, Cypress, Unit Testing, Integration Testing, TDD, BDD</div>
+                <div class="skill-line"><strong>Tools:</strong> Git, Bitbucket, Jira, Swagger, OpenAPI, PM2</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Experience</div>
+            
+            <div class="job">
+                <div class="job-title">Biztree — Senior Software Engineer — Jan 2023 to Present</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Architected a unified NestJS microservices backend powering 5+ SaaS applications serving 12M+ users</li>
+                        <li>Built CloudDrive supporting 500K daily file operations with RBAC, presigned S3 access, AWS Lambda</li>
+                        <li>Led zero-downtime MongoDB migration for 50M+ records using safe batch processing and rollback</li>
+                        <li>Implemented BullMQ and RabbitMQ queues to reduce API latency by 45%</li>
+                        <li>Built HRM backend services with PostgreSQL, TypeORM, CQRS, audit logs, and scheduled workers</li>
+                        <li>Developed AI middleware for document workflows and chat features with token tracking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-title">InvoZone — Senior Software Engineer — Oct 2021 to Jan 2023</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Delivered enterprise PAM platform for credential management, session recording, access workflows</li>
+                        <li>Designed scalable microservices architecture with load balancing and multi-instance clustering</li>
+                        <li>Refactored legacy modules into modular service-oriented components, improved deployment speed</li>
+                        <li>Built session forensics and audit capabilities including keystroke and video recording</li>
+                        <li>Strengthened security against XSS, SQL injection, directory traversal, and brute-force attacks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-title">TenX — Software Engineer — Aug 2018 to Oct 2021</div>
+                <div class="job-description">
+                    <ul>
+                        <li>Built full-stack applications for enterprise and scientific use cases with automated detection</li>
+                        <li>Improved processing speed and throughput through distributed system design</li>
+                        <li>Helped improve release frequency by 2x through CI/CD and testing workflows</li>
+                        <li>Reworked internal packages and front-end components to improve performance</li>
+                        <li>Contributed to sports analytics platform with measurable impact on strategy outcomes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div style="font-size: 9px;">
+                <div><strong>Bachelor of Science in Computer Science</strong></div>
+                <div>FAST-NUCES, 2014 to 2018</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Certification</div>
+            <div style="font-size: 9px;">AWS Certified Developer Associate</div>
+        </div>
+    </div>
+</body>
+</html>

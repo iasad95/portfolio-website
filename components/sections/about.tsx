@@ -72,10 +72,7 @@ export default function About() {
         >
           <div className="bg-gray-900/40 backdrop-blur-sm p-8 rounded-2xl border border-blue-500/20 space-y-4">
             <p className="text-gray-300 leading-relaxed text-lg">
-              Senior Full-Stack Developer with 8+ years of experience building and scaling SaaS platforms using MERN and MEAN stacks on AWS. I specialize in Node.js, NestJS, React, Angular, microservices, event-driven architectures, and serverless solutions with a proven track record of reducing API latency by 45%, cutting backend development effort by 40%, and executing zero-downtime migrations for systems serving 12M+ users.
-            </p>
-            <p className="text-gray-300 leading-relaxed text-lg">
-              At Biztree, I architected a unified NestJS microservices backend powering 5+ SaaS applications and built the CloudDrive platform supporting 500K daily file operations. Previously at InvoZone, I delivered the enterprise Privileged Access Management platform used by RevBits security teams. At TenX, I engineered distributed systems for Ancera and Arccos Golf, improving processing efficiency and enabling the Arccos platform to win #3 in sports innovation.
+              I build software that has to work under pressure. Over the last 8+ years, I have built SaaS platforms, security systems, and cloud-native workflows with Node.js, NestJS, React, Angular, and AWS. My focus is not just shipping features, but reducing complexity, improving speed, and building systems that stay reliable as they grow. I also use AI tools such as Claude and Cursor to move faster, while keeping architecture, testability, and production quality strong.
             </p>
           </div>
 

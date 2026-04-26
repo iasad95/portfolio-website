@@ -15,11 +15,6 @@ export default function Skills() {
   const skillCategories = [
     {
       icon: <Code2 className="h-6 w-6" />,
-      title: "Languages",
-      skills: ["JavaScript", "TypeScript"],
-    },
-    {
-      icon: <Code2 className="h-6 w-6" />,
       title: "Backend",
       skills: ["Node.js", "NestJS", "Express.js", "REST APIs", "GraphQL"],
     },
@@ -36,7 +31,7 @@ export default function Skills() {
     {
       icon: <Zap className="h-6 w-6" />,
       title: "Cloud & DevOps",
-      skills: ["AWS (Lambda, S3, EventBridge, EC2, IAM, SQS, SNS, RDS)", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Jenkins"],
+      skills: ["AWS", "Lambda", "S3", "EventBridge", "EC2", "IAM", "SQS", "SNS", "RDS", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Jenkins"],
     },
     {
       icon: <Brain className="h-6 w-6" />,
@@ -44,14 +39,19 @@ export default function Skills() {
       skills: ["Microservices", "Distributed Systems", "Event-Driven Architecture", "CQRS", "API Gateway", "System Design"],
     },
     {
+      icon: <Brain className="h-6 w-6" />,
+      title: "AI / LLM Tools",
+      skills: ["Claude", "Cursor", "AI-assisted development", "AI middleware", "Document workflows", "Chat systems"],
+    },
+    {
       icon: <Code2 className="h-6 w-6" />,
       title: "Testing",
-      skills: ["Jest", "Cypress", "Unit Testing", "Integration Testing", "TDD", "BDD Practices"],
+      skills: ["Jest", "Cypress", "Unit Testing", "Integration Testing", "TDD", "BDD"],
     },
     {
       icon: <Zap className="h-6 w-6" />,
       title: "Tools",
-      skills: ["Git", "GitHub Actions", "Jenkins", "Bitbucket", "Jira", "Swagger", "OpenAPI", "PM2"],
+      skills: ["Git", "Bitbucket", "Jira", "Swagger", "OpenAPI", "PM2"],
     },
   ]
 

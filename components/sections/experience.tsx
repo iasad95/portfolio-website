@@ -22,12 +22,14 @@ export default function Experience() {
       location: "Remote",
       stage: "Current",
       description:
-        "Architected a unified NestJS microservices backend powering 5+ SaaS applications, serving 12M+ users, reducing backend development effort by 40%. Built the CloudDrive platform (NestJS, MongoDB) supporting 500K daily file operations with secure access (RBAC), S3 presigned URLs and thumbnail generation via AWS Lambda.",
+        "Architected a unified NestJS microservices backend powering 5+ SaaS applications serving 12M+ users. Reduced API latency by 45% with BullMQ and RabbitMQ. Led a zero-downtime MongoDB migration for 50M+ records using safe batch processing and rollback strategies. Built CloudDrive supporting 500K daily file operations with RBAC, S3 presigned URLs, and AWS Lambda thumbnail generation.",
       highlights: [
+        "Architected unified microservices backend for 12M+ users",
+        "CloudDrive: 500K daily file operations with secure access",
+        "Zero-downtime migration: 50M+ MongoDB records",
         "Reduced API latency by 45% using BullMQ + RabbitMQ",
-        "Led MongoDB V1 to V2 migration (50M+ records) with zero downtime",
-        "Built HRM backend with CQRS architecture",
-        "Developed AI middleware for 12M+ users",
+        "Built HRM backend with PostgreSQL, TypeORM, and CQRS",
+        "AI middleware for document workflows and chat features with token tracking",
       ],
     },
     {
@@ -37,12 +39,14 @@ export default function Experience() {
       location: "Lahore, Pakistan",
       stage: "2021-2023",
       description:
-        "Delivered an enterprise Privileged Access Management (PAM) platform. Designed and implemented a scalable microservices architecture with load balancing and multi-instance clustering, enabling high availability and reliable performance.",
+        "Delivered an enterprise Privileged Access Management (PAM) platform for RevBits security teams. Designed a scalable microservices architecture with load balancing, multi-instance clustering, and session forensics. Won Gold in the 2022 Globee Awards against Thycotic.",
       highlights: [
-        "Implemented session forensics and audit capabilities",
+        "Enterprise PAM platform: credential & session management",
+        "Scalable microservices with load balancing and clustering",
+        "Session forensics and audit capabilities: keystroke/video recording",
         "Improved deployment speed by 30%",
-        "RevBits PAM won Gold in 2022 Globee Awards",
-        "Modernized legacy modules with SOA",
+        "Security hardening: XSS, SQL injection, brute-force protection",
+        "RevBits PAM: Globee Gold Award 2022",
       ],
     },
     {
@@ -52,12 +56,14 @@ export default function Experience() {
       location: "Lahore, Pakistan",
       stage: "2018-2021",
       description:
-        "Developed full-stack applications for Ancera and Arccos Golf. Engineered distributed, resource-intensive systems for scientific data processing and sports analytics.",
+        "Built full-stack applications for Ancera (food safety) and Arccos Golf (sports analytics). Engineered distributed, resource-intensive systems for scientific data processing and real-time analytics with measurable impact.",
       highlights: [
-        "Built automated detection pipelines reducing processing time by 50%",
-        "Implemented automated CI/CD pipelines with 2x release frequency",
-        "Arccos Golf ranked #3 in sports innovation",
-        "Optimized internal NPM packages for productivity",
+        "Ancera: automated contamination detection with 90% processing improvement",
+        "Arccos Golf: real-time performance tracking with #3 sports innovation ranking",
+        "Distributed system design for high-throughput processing",
+        "Improved release frequency by 2x through CI/CD automation",
+        "Optimized internal NPM packages for developer productivity",
+        "40% improvement in shot strategy accuracy for Arccos",
       ],
     },
   ]
