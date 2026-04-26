@@ -16,25 +16,25 @@ export default function Freelance() {
     {
       icon: Star,
       title: "Top Rated Plus",
-      description: "Highest freelancer badge on Upwork for consistent excellence",
+      description: "Upwork's highest freelancer badge",
       color: "text-yellow-400",
     },
     {
       icon: TrendingUp,
       title: "Complex Systems",
-      description: "Trusted for backend systems, cloud work, and product improvements",
+      description: "Trusted for backend work and product improvements",
       color: "text-green-400",
     },
     {
       icon: CheckCircle,
-      title: "Proven Delivery",
-      description: "SaaS, enterprise security, migrations, dashboards, custom business systems",
+      title: "Proven Work",
+      description: "SaaS, security, migrations, dashboards",
       color: "text-blue-400",
     },
     {
       icon: Award,
-      title: "Production Quality",
-      description: "Known for clean communication, reliable delivery, and engineering decisions that hold up",
+      title: "Reliable Delivery",
+      description: "Clean communication. Engineering decisions that hold up.",
       color: "text-purple-400",
     },
   ]
@@ -51,7 +51,7 @@ export default function Freelance() {
           )}
         >
           <p className="text-lg text-gray-300 leading-relaxed mb-8 text-center">
-            <span className="font-semibold text-blue-400">Top Rated Plus</span> freelancer trusted for complex web platforms, backend systems, cloud work, and product improvements. Delivered work across SaaS, enterprise security, migration projects, dashboards, and custom business systems. Known for clean communication, reliable delivery, and engineering decisions that hold up in production.
+            Top Rated Plus on Upwork. Delivered work across SaaS, security, migrations, and custom systems. Remote collaboration. Reliable delivery.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">

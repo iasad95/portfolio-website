@@ -59,8 +59,15 @@ export default function Hero() {
 
         {/* Description */}
         <motion.p variants={itemVariants} className="text-base md:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          I design and ship Node.js, NestJS, React, Angular, and AWS platforms that handle real-world load, reduce latency by 45%, and support 12M+ users. 8+ years of proven results in building distributed systems that stay reliable as they grow.
+          I build systems that need to work at scale. Node.js, NestJS, React, Angular, AWS. Currently available for remote roles and freelance work. US and EU time zones.
         </motion.p>
+
+        {/* Availability Badge */}
+        <motion.div variants={itemVariants} className="inline-block">
+          <div className="px-4 py-2 rounded-full bg-green-500/20 border border-green-500/50 text-green-300 text-sm font-medium">
+            Currently available for new opportunities
+          </div>
+        </motion.div>
 
         {/* CTAs */}
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

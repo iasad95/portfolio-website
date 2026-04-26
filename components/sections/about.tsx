@@ -72,7 +72,7 @@ export default function About() {
         >
           <div className="bg-gray-900/40 backdrop-blur-sm p-8 rounded-2xl border border-blue-500/20 space-y-4">
             <p className="text-gray-300 leading-relaxed text-lg">
-              I build software that has to work under pressure. Over the last 8+ years, I have built SaaS platforms, security systems, and cloud-native workflows with Node.js, NestJS, React, Angular, and AWS. My focus is not just shipping features, but reducing complexity, improving speed, and building systems that stay reliable as they grow. I also use AI tools such as Claude and Cursor to move faster, while keeping architecture, testability, and production quality strong.
+              I build systems that have to work. SaaS platforms, security systems, cloud work with Node.js, NestJS, React, Angular, and AWS. I focus on keeping things simple, reducing complexity, and making sure systems stay reliable under load. I use Claude and Cursor to move faster without cutting corners on quality or architecture.
             </p>
           </div>
 
