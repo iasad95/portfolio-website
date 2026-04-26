@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState, useEffect } from "react"
-import { MapPin, Mail, Linkedin, Phone, Globe } from "lucide-react"
+import { MapPin, Mail, Linkedin, Phone, Globe, MessageCircle } from "lucide-react"
 import SectionHeading from "@/components/ui/section-heading"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -67,6 +67,12 @@ export default function Contact() {
       label: "Email",
       href: "mailto:asad@asadcodes.com",
       text: "asad@asadcodes.com",
+    },
+    {
+      icon: <MessageCircle className="h-6 w-6" />,
+      label: "WhatsApp",
+      href: "https://wa.me/923164363605",
+      text: "+92 (316) 4363605",
     },
     {
       icon: <Globe className="h-6 w-6" />,
