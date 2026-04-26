@@ -71,7 +71,7 @@ export default function Hero() {
             Book a Call
           </a>
           <a
-            href="/resume/index.html"
+            href="/resume.pdf"
             download="Asad-Resume.pdf"
             className="inline-flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-blue-300 border border-blue-500/40 font-semibold px-8 py-3 rounded-lg transition-all duration-200"
           >
