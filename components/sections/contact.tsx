@@ -106,10 +106,9 @@ export default function Contact() {
           )}
         >
           <div>
-            <h3 className="text-2xl font-bold text-gray-100 mb-4">Get in Touch</h3>
+            <h3 className="text-2xl font-bold text-gray-100 mb-4">Have a project, role, or product idea? Let's talk.</h3>
             <p className="text-gray-400 leading-relaxed">
-              Whether you have a project in mind, want to collaborate, or just want to chat, feel free to reach out. I'm
-              always interested in hearing about new opportunities and challenges.
+              I'm always interested in hearing about new opportunities, complex engineering challenges, and ways to build systems that scale.
             </p>
           </div>
 

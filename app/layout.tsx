@@ -2,17 +2,23 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { CursorBackground } from "@/components/cursor-background"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Asad - Senior Software Engineer",
+  title: "Asad | Senior Full-Stack Developer, AWS, Node.js, React, AI Systems",
   description:
-    "Senior Software Engineer specializing in JavaScript, React, Angular, Node.js, and AWS. Building scalable SaaS platforms with microservices and event-driven architectures. 8+ years of experience.",
+    "Senior Full-Stack Developer with 8+ years of experience building scalable SaaS platforms with Node.js, NestJS, React, Angular, AWS, microservices, and AI-enabled workflows.",
   generator: "v0.app",
+  openGraph: {
+    title: "Asad | Senior Full-Stack Developer, AWS, Node.js, React, AI Systems",
+    description:
+      "Senior Full-Stack Developer with 8+ years of experience building scalable SaaS platforms with Node.js, NestJS, React, Angular, AWS, microservices, and AI-enabled workflows.",
+    type: "website",
+    locale: "en_US",
+  },
   icons: {
     icon: [
       {
@@ -40,7 +46,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
-        <CursorBackground />
         {children}
         <Analytics />
       </body>

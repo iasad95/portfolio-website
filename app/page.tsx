@@ -1,10 +1,11 @@
 import Navbar from "@/components/ui/navbar"
 import Hero from "@/components/sections/hero"
-import WhatIBuild from "@/components/sections/what-i-build"
+import TrustBar from "@/components/sections/trust-bar"
 import Projects from "@/components/sections/projects"
 import Experience from "@/components/sections/experience"
 import Skills from "@/components/sections/skills"
-import Certifications from "@/components/sections/certifications"
+import WhatIBuild from "@/components/sections/what-i-build"
+import Freelance from "@/components/sections/freelance"
 import Contact from "@/components/sections/contact"
 
 export default function Home() {
@@ -14,11 +15,12 @@ export default function Home() {
       <Navbar />
       <div className="relative z-10">
         <Hero />
-        <WhatIBuild />
+        <TrustBar />
         <Projects />
         <Experience />
         <Skills />
-        <Certifications />
+        <WhatIBuild />
+        <Freelance />
         <Contact />
       </div>
     </main>
