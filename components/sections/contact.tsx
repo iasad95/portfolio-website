@@ -132,10 +132,10 @@ export default function Contact() {
             ))}
           </div>
 
-          <div className="pt-4 border-t border-blue-500/20">
+          <div className="pt-4 border-t border-blue-500/20 space-y-3">
             <div className="flex items-center gap-2 text-gray-400">
               <MapPin className="h-5 w-5 text-blue-400" />
-              <span>Based in Pakistan</span>
+              <span>Based in Pakistan. US and EU time zones.</span>
             </div>
           </div>
         </div>

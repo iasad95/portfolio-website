@@ -14,11 +14,11 @@ export default function Experience() {
         "Architected a unified NestJS microservices backend powering 5+ SaaS applications serving 12M+ users. Reduced API latency by 45% with BullMQ and RabbitMQ. Led a zero-downtime MongoDB migration for 50M+ records using safe batch processing and rollback strategies. Built CloudDrive supporting 500K daily file operations with RBAC, S3 presigned URLs, and AWS Lambda thumbnail generation.",
       highlights: [
         "Architected unified microservices backend for 12M+ users",
-        "CloudDrive: 500K daily file operations with secure access",
-        "Zero-downtime migration: 50M+ MongoDB records",
-        "Reduced API latency by 45% using BullMQ + RabbitMQ",
-        "Built HRM backend with PostgreSQL, TypeORM, and CQRS",
-        "AI middleware for document workflows and chat features with token tracking",
+        "Built CloudDrive: 500K daily file operations with secure access",
+        "Led zero-downtime MongoDB migration: 50M+ records",
+        "Reduced API latency by 45% using BullMQ and RabbitMQ",
+        "Built HRM backend with PostgreSQL, TypeORM, CQRS",
+        "Built AI middleware for document workflows and chat systems",
       ],
     },
     {
@@ -29,12 +29,12 @@ export default function Experience() {
       description:
         "Delivered an enterprise Privileged Access Management (PAM) platform for RevBits security teams. Designed a scalable microservices architecture with load balancing, multi-instance clustering, and session forensics. Won Gold in the 2022 Globee Awards against Thycotic.",
       highlights: [
-        "Enterprise PAM platform: credential & session management",
-        "Scalable microservices with load balancing and clustering",
-        "Session forensics and audit capabilities: keystroke/video recording",
-        "Improved deployment speed by 30%",
-        "Security hardening: XSS, SQL injection, brute-force protection",
-        "RevBits PAM: Globee Gold Award 2022",
+        "Built enterprise PAM platform: credential and session management",
+        "Designed scalable microservices with load balancing and clustering",
+        "Added session forensics: keystroke and video recording for auditing",
+        "Improved deployment speed by 30% with CI/CD automation",
+        "Hardened security: XSS, SQL injection, brute-force protection",
+        "Won Globee Gold Award for security innovation (2022)",
       ],
     },
     {
@@ -45,12 +45,12 @@ export default function Experience() {
       description:
         "Built full-stack applications for Ancera (food safety) and Arccos Golf (sports analytics). Engineered distributed, resource-intensive systems for scientific data processing and real-time analytics with measurable impact.",
       highlights: [
-        "Ancera: automated contamination detection with 90% processing improvement",
-        "Arccos Golf: real-time performance tracking with #3 sports innovation ranking",
-        "Distributed system design for high-throughput processing",
-        "Improved release frequency by 2x through CI/CD automation",
-        "Optimized internal NPM packages for developer productivity",
-        "40% improvement in shot strategy accuracy for Arccos",
+        "Built automated contamination detection system. Reduced processing by 90%",
+        "Built real-time golf performance tracking with Microsoft. Improved accuracy by 40%",
+        "Designed distributed systems for high-throughput scientific computing",
+        "Doubled release frequency with CI/CD automation and testing",
+        "Optimized internal NPM packages to improve developer productivity",
+        "Won #3 ranking in global sports innovation awards (Arccos)",
       ],
     },
   ]

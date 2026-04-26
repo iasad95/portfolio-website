@@ -10,7 +10,7 @@ export default function Projects() {
       problem: "Multiple SaaS applications needed unified backend with reduced latency",
       solution: "Architected microservices backend with BullMQ and RabbitMQ for async processing",
       description:
-        "Unified microservices backend serving 12M+ users across Biztree's SaaS ecosystem. Reduced API latency by 45% using BullMQ + RabbitMQ, cut backend development effort by 40%, and enabled zero-downtime migration of 50M+ MongoDB records.",
+        "Handled 12M+ users across multiple SaaS apps. Built unified microservices backend that reduced latency by 45%, cut development effort by 40%, and migrated 50M+ records with zero downtime.",
       tech: ["NestJS", "React", "MongoDB", "AWS", "Microservices"],
       year: "2023-Present",
       highlights: ["12M+ Users", "45% Latency Reduction", "40% Dev Effort Cut"],
@@ -20,7 +20,7 @@ export default function Projects() {
       problem: "Enterprise teams needed unified privilege access management with real-time auditing",
       solution: "Engineered microservices platform with session forensics and comprehensive audit logs",
       description:
-        "Enterprise security solution with privileged session management, CI/CD integration, and comprehensive security features. Received Globee Gold Award against Thycotic.",
+        "Built enterprise privilege access management platform. Scaled from zero to production with microservices, load balancing, session forensics, and audit capabilities. Won Globee Gold Award.",
       tech: ["React", "NestJS", "Microservices", "Security"],
       year: "2021-2023",
       highlights: ["Globee Gold Award", "Real-time Auditing", "Enterprise Scale"],
@@ -30,7 +30,7 @@ export default function Projects() {
       problem: "Golfers needed real-time performance tracking with environmental adjustments",
       solution: "Built real-time tracking system with Microsoft, integrating wind and slope data",
       description:
-        "First fully automated golf performance tracking system with Microsoft. Real-time wind, slope, and environmental adjustment. 40% improvement in shot accuracy.",
+        "First fully automated golf performance tracking system with Microsoft. Real-time environmental tracking improved shot accuracy by 40%. Ranked #3 in global sports innovation.",
       tech: ["React", "Node.js", "Real-time Analytics", "GPS"],
       year: "2019-2021",
       highlights: ["40% Accuracy Improvement", "#3 Global Innovation", "Real-time Tracking"],
@@ -40,7 +40,7 @@ export default function Projects() {
       problem: "Food safety required fast, automated contamination detection",
       solution: "Built ML-powered detection pipelines with distributed processing",
       description:
-        "Food contamination detection system for early biological threat identification. Optimized detection process by 90%, generating millions in revenue for Merck & Co.",
+        "Automated food contamination detection system. Reduced detection time by 90% using ML and distributed processing. Generated millions in revenue for Merck & Co.",
       tech: ["React", "Node.js", "Machine Learning", "Data Analytics"],
       year: "2019-2021",
       highlights: ["90% Processing Speed", "ML-Powered", "Revenue Generation"],
