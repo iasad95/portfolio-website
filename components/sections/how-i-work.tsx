@@ -29,9 +29,9 @@ export default function HowIWork() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {approaches.map((item, index) => (
-            <div key={index} className="bg-white dark:bg-gray-900/40 border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:border-blue-500/50 transition-all duration-300">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{item.title}</h3>
-              <p className="text-gray-500 dark:text-gray-400 leading-relaxed">{item.description}</p>
+            <div key={index} className="bg-gray-900/40 border border-gray-800 rounded-lg p-6 hover:border-blue-500/50 transition-all duration-300">
+              <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+              <p className="text-gray-400 leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>

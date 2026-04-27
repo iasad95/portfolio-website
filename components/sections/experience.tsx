@@ -61,30 +61,30 @@ export default function Experience() {
 
       <div className="max-w-4xl mx-auto space-y-6">
         {experiences.map((exp, index) => (
-          <div key={index} className="bg-white dark:bg-gray-900/40 border border-gray-200 dark:border-gray-800 rounded-lg p-6 hover:border-blue-500/50 transition-all duration-300">
-            <div className="flex flex-wrap justify-between items-start gap-2 mb-3">
+          <div key={index} className="bg-gray-900/40 border border-gray-800 rounded-lg p-6 hover:border-blue-500/50 transition-all duration-300">
+            <div className="flex justify-between items-start gap-4 mb-3">
               <div>
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white">{exp.position}</h3>
-                <p className="text-blue-600 dark:text-blue-400 font-semibold">{exp.company}</p>
+                <h3 className="text-lg font-bold text-white">{exp.position}</h3>
+                <p className="text-blue-400 font-semibold">{exp.company}</p>
               </div>
-              <span className="text-xs font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-2.5 py-1 rounded whitespace-nowrap">
+              <span className="text-xs font-medium text-gray-400 bg-gray-800 px-2.5 py-1 rounded whitespace-nowrap">
                 {exp.duration}
               </span>
             </div>
 
-            <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-4">
+            <div className="flex items-center gap-4 text-sm text-gray-400 mb-4">
               <div className="flex items-center gap-1">
-                <MapPin className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                <MapPin className="h-4 w-4 text-blue-400" />
                 {exp.location}
               </div>
             </div>
 
-            <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed mb-4">{exp.description}</p>
+            <p className="text-sm text-gray-300 leading-relaxed mb-4">{exp.description}</p>
 
             <ul className="space-y-2">
               {exp.highlights.map((highlight, i) => (
-                <li key={i} className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-blue-500" />
+                <li key={i} className="text-sm text-gray-400 flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-blue-400" />
                   {highlight}
                 </li>
               ))}

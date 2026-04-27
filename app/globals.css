@@ -2,55 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(1rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-  .animate-fade-up {
-    animation: fade-up 0.6s ease-out both;
-  }
-  .anim-delay-0   { animation-delay:   0ms; }
-  .anim-delay-120 { animation-delay: 120ms; }
-  .anim-delay-240 { animation-delay: 240ms; }
-  .anim-delay-360 { animation-delay: 360ms; }
-  .anim-delay-480 { animation-delay: 480ms; }
-  .anim-delay-600 { animation-delay: 600ms; }
 }
 
 @layer base {
   :root {
+    /* Updated color scheme to professional dark theme with blue accents */
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
-    --background: 220 14% 96%;
-    --foreground: 222 47% 11%;
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 12 12% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
     --primary: 219 89% 52%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 210 15% 90%;
-    --secondary-foreground: 222 47% 11%;
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --primary-foreground: 0 0% 3.9%;
+    --secondary: 210 15% 35%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 210 10% 25%;
+    --muted-foreground: 0 0% 65%;
     --accent: 219 89% 52%;
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 0 0% 3.9%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
+    --border: 210 10% 20%;
+    --input: 210 10% 20%;
     --ring: 219 89% 52%;
+    --chart-1: 219 89% 52%;
+    --chart-2: 210 89% 45%;
+    --chart-3: 216 85% 48%;
+    --chart-4: 213 84% 51%;
+    --chart-5: 211 88% 54%;
     --radius: 0.5rem;
   }
   .dark {
@@ -73,6 +59,11 @@
     --border: 210 10% 20%;
     --input: 210 10% 20%;
     --ring: 219 89% 52%;
+    --chart-1: 219 89% 52%;
+    --chart-2: 210 89% 45%;
+    --chart-3: 216 85% 48%;
+    --chart-4: 213 84% 51%;
+    --chart-5: 211 88% 54%;
   }
 }
 

@@ -4,19 +4,13 @@ import SectionHeading from "@/components/ui/section-heading"
 
 export default function HowIThink() {
   return (
-    <section className="py-24 px-4 bg-gray-100 dark:bg-gray-950/40 border-t border-b border-gray-200 dark:border-gray-800 scroll-mt-16" id="about">
+    <section className="py-24 px-4 bg-gray-950/40 border-t border-b border-gray-800 scroll-mt-16">
       <div className="max-w-4xl mx-auto">
-        <SectionHeading title="About" />
-
-        <div className="bg-white dark:bg-gray-900/60 border border-gray-200 dark:border-gray-800 rounded-lg p-8 space-y-4 leading-relaxed text-gray-600 dark:text-gray-300">
+        <SectionHeading title="How I Think" subtitle="My approach to building systems" />
+        
+        <div className="bg-gray-900/60 border border-gray-800 rounded-lg p-8 leading-relaxed text-gray-300">
           <p className="text-lg">
-            I build software that needs to work under pressure. Most of my work has been in SaaS, backend systems, and product engineering, where the goal is not just to ship features but to keep things fast, reliable, and easy for teams to work with.
-          </p>
-          <p className="text-lg">
-            I am comfortable working remotely, collaborating across time zones, and taking ownership from planning to delivery. I have worked as a core team member at product companies and delivered complete systems as a freelancer on Upwork.
-          </p>
-          <p className="text-lg">
-            I also use AI tools like Claude and Cursor to move faster while keeping architecture, testing, and production quality strong.
+            I focus on building systems that remain stable under scale. I prioritize simplicity in architecture, clear separation of concerns, and predictable performance. I make decisions based on tradeoffs, not trends, and aim to reduce long-term complexity rather than just ship features quickly.
           </p>
         </div>
       </div>
