@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Star, TrendingUp, CheckCircle, Award } from "lucide-react"
+import { UpworkIcon } from "@/components/icons/upwork"
 import SectionHeading from "@/components/ui/section-heading"
 import { cn } from "@/lib/utils"
 
@@ -16,25 +17,25 @@ export default function Freelance() {
     {
       icon: Star,
       title: "Top Rated Plus",
-      description: "Highest freelancer badge on Upwork for consistent excellence",
+      description: "Upwork's highest freelancer badge",
       color: "text-yellow-400",
     },
     {
       icon: TrendingUp,
       title: "Complex Systems",
-      description: "Trusted for backend systems, cloud work, and product improvements",
+      description: "Trusted for backend work and product improvements",
       color: "text-green-400",
     },
     {
       icon: CheckCircle,
-      title: "Proven Delivery",
-      description: "SaaS, enterprise security, migrations, dashboards, custom business systems",
+      title: "Proven Work",
+      description: "SaaS, security, migrations, dashboards",
       color: "text-blue-400",
     },
     {
       icon: Award,
-      title: "Production Quality",
-      description: "Known for clean communication, reliable delivery, and engineering decisions that hold up",
+      title: "Reliable Delivery",
+      description: "Clean communication. Engineering decisions that hold up.",
       color: "text-purple-400",
     },
   ]
@@ -50,8 +51,8 @@ export default function Freelance() {
             mounted && "opacity-100 translate-y-0",
           )}
         >
-          <p className="text-lg text-gray-300 leading-relaxed mb-8 text-center">
-            <span className="font-semibold text-blue-400">Top Rated Plus</span> freelancer trusted for complex web platforms, backend systems, cloud work, and product improvements. Delivered work across SaaS, enterprise security, migration projects, dashboards, and custom business systems. Known for clean communication, reliable delivery, and engineering decisions that hold up in production.
+          <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8 text-center">
+            Top Rated Plus on Upwork. Delivered work across SaaS, security, migrations, and custom systems. Remote collaboration. Reliable delivery.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -61,7 +62,7 @@ export default function Freelance() {
                 <div
                   key={index}
                   className={cn(
-                    "flex items-start gap-4 p-4 bg-gray-900/30 border border-blue-500/20 rounded-xl hover:border-blue-500/40 transition-all duration-300 opacity-0 transform translate-y-8",
+                    "flex items-start gap-4 p-4 bg-white dark:bg-gray-900/30 border border-blue-500/20 rounded-xl hover:border-blue-500/40 transition-all duration-300 opacity-0 transform translate-y-8",
                     mounted && "opacity-100 translate-y-0",
                   )}
                   style={{
@@ -72,8 +73,8 @@ export default function Freelance() {
                     <Icon className="h-6 w-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-100 mb-1">{credential.title}</h4>
-                    <p className="text-sm text-gray-400">{credential.description}</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">{credential.title}</h4>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">{credential.description}</p>
                   </div>
                 </div>
               )
@@ -87,12 +88,12 @@ export default function Freelance() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/40"
             >
-              <Star className="h-4 w-4" />
+              <UpworkIcon className="h-4 w-4" />
               View Upwork Profile
             </a>
             <a
               href="https://wa.me/923164363605"
-              className="inline-flex items-center justify-center gap-2 bg-gray-900/60 hover:bg-gray-900 text-blue-300 border border-blue-500/40 font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 backdrop-blur-sm hover:border-blue-400/60 hover:text-blue-200"
+              className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 dark:bg-gray-900/60 dark:hover:bg-gray-900 text-blue-600 dark:text-blue-300 border border-blue-500/40 font-semibold px-8 py-3.5 rounded-lg transition-all duration-300 hover:border-blue-400/60"
             >
               Discuss Your Project
             </a>
