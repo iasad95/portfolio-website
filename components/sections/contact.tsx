@@ -2,7 +2,8 @@
 
 import type React from "react"
 import { useState, useEffect } from "react"
-import { MapPin, Mail, Linkedin, Phone, Globe, MessageCircle } from "lucide-react"
+import { Mail, Linkedin, Phone, MessageCircle } from "lucide-react"
+import { UpworkIcon } from "@/components/icons/upwork"
 import SectionHeading from "@/components/ui/section-heading"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -67,36 +68,41 @@ export default function Contact() {
       label: "Email",
       href: "mailto:asad@asadcodes.com",
       text: "asad@asadcodes.com",
+      external: false,
+    },
+    {
+      icon: <Phone className="h-6 w-6" />,
+      label: "Phone",
+      href: "tel:+923164363605",
+      text: "+92 (316) 4363605",
+      external: false,
     },
     {
       icon: <MessageCircle className="h-6 w-6" />,
       label: "WhatsApp",
       href: "https://wa.me/923164363605",
       text: "+92 (316) 4363605",
-    },
-    {
-      icon: <Globe className="h-6 w-6" />,
-      label: "Website",
-      href: "https://asadcodes.com",
-      text: "asadcodes.com",
+      external: true,
     },
     {
       icon: <Linkedin className="h-6 w-6" />,
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/i-asad/",
       text: "linkedin.com/in/i-asad",
+      external: true,
     },
     {
-      icon: <Phone className="h-6 w-6" />,
-      label: "Phone",
-      href: "tel:+923000420605",
-      text: "+92 (300) 0420605",
+      icon: <UpworkIcon className="h-6 w-6" />,
+      label: "Upwork",
+      href: "https://www.upwork.com/freelancers/asad007",
+      text: "upwork.com/freelancers/asad007",
+      external: true,
     },
   ]
 
   return (
     <section id="contact" className="py-20 relative scroll-mt-16 px-4">
-      <SectionHeading title="Let's Connect" subtitle="I'd love to hear from you" />
+      <SectionHeading title="Get in Touch" subtitle="Open to remote roles and freelance projects" />
 
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
         <div
@@ -106,9 +112,9 @@ export default function Contact() {
           )}
         >
           <div>
-            <h3 className="text-2xl font-bold text-gray-100 mb-4">Have a project, role, or product idea? Let's talk.</h3>
-            <p className="text-gray-400 leading-relaxed">
-              I'm always interested in hearing about new opportunities, complex engineering challenges, and ways to build systems that scale.
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">Have a role or project in mind? Let's talk.</h3>
+            <p className="text-gray-500 dark:text-gray-400 leading-relaxed">
+              Whether you need a full-stack engineer for your remote team or help shipping a product, I am open to hearing about it.
             </p>
           </div>
 
@@ -117,27 +123,20 @@ export default function Contact() {
               <a
                 key={index}
                 href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 p-4 bg-gray-900/30 backdrop-blur-sm border border-blue-500/20 rounded-lg hover:border-blue-500/40 hover:bg-gray-900/50 transition-all duration-300 group"
+                {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                className="flex items-center gap-4 p-4 bg-white dark:bg-gray-900/30 border border-blue-500/20 rounded-lg hover:border-blue-500/40 hover:bg-gray-50 dark:hover:bg-gray-900/50 transition-all duration-300 group"
               >
-                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-400 group-hover:bg-blue-500/30 transition-all">
+                <div className="p-3 bg-blue-500/20 rounded-lg text-blue-600 dark:text-blue-400 group-hover:bg-blue-500/30 transition-all">
                   {link.icon}
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-100">{link.label}</h4>
-                  <p className="text-sm text-gray-400">{link.text}</p>
+                  <h4 className="font-semibold text-gray-900 dark:text-gray-100">{link.label}</h4>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">{link.text}</p>
                 </div>
               </a>
             ))}
           </div>
 
-          <div className="pt-4 border-t border-blue-500/20 space-y-3">
-            <div className="flex items-center gap-2 text-gray-400">
-              <MapPin className="h-5 w-5 text-blue-400" />
-              <span>Based in Pakistan. US and EU time zones.</span>
-            </div>
-          </div>
         </div>
 
         <div
@@ -148,13 +147,13 @@ export default function Contact() {
         >
           <form
             onSubmit={handleSubmit}
-            className="bg-gray-900/40 backdrop-blur-sm p-8 rounded-xl border border-blue-500/20 space-y-6"
+            className="bg-white dark:bg-gray-900/40 p-8 rounded-xl border border-blue-500/20 space-y-6"
           >
-            <h3 className="text-xl font-bold text-gray-100">Send Me a Message</h3>
+            <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">Send Me a Message</h3>
 
             {submitted && (
               <div className="p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
-                <p className="text-green-400 text-sm font-medium">Thanks! I'll get back to you soon.</p>
+                <p className="text-green-600 dark:text-green-400 text-sm font-medium">Thanks! I'll get back to you soon.</p>
               </div>
             )}
 
@@ -165,7 +164,7 @@ export default function Contact() {
             )}
 
             <div>
-              <label htmlFor="name" className="text-sm font-medium text-gray-300 mb-2 block">
+              <label htmlFor="name" className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 block">
                 Name
               </label>
               <Input
@@ -175,12 +174,12 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="Your name"
                 required
-                className="bg-gray-800/50 border-blue-500/20 focus:border-blue-500/50 focus:ring-blue-500/20"
+                className="bg-gray-50 dark:bg-gray-800/50 border-blue-500/20 focus:border-blue-500/50 focus:ring-blue-500/20"
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="text-sm font-medium text-gray-300 mb-2 block">
+              <label htmlFor="email" className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 block">
                 Email
               </label>
               <Input
@@ -191,12 +190,12 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="your@email.com"
                 required
-                className="bg-gray-800/50 border-blue-500/20 focus:border-blue-500/50 focus:ring-blue-500/20"
+                className="bg-gray-50 dark:bg-gray-800/50 border-blue-500/20 focus:border-blue-500/50 focus:ring-blue-500/20"
               />
             </div>
 
             <div>
-              <label htmlFor="message" className="text-sm font-medium text-gray-300 mb-2 block">
+              <label htmlFor="message" className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 block">
                 Message
               </label>
               <Textarea
@@ -206,7 +205,7 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="Tell me about your project or inquiry..."
                 required
-                className="bg-gray-800/50 border-blue-500/20 focus:border-blue-500/50 focus:ring-blue-500/20 min-h-[120px] resize-none"
+                className="bg-gray-50 dark:bg-gray-800/50 border-blue-500/20 focus:border-blue-500/50 focus:ring-blue-500/20 min-h-[120px] resize-none"
               />
             </div>
 
