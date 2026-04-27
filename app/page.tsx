@@ -14,8 +14,7 @@ import Contact from "@/components/sections/contact"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-foreground overflow-hidden">
-      <div className="fixed inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+    <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />
       <div className="relative z-10">
         <Hero />

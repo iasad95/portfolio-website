@@ -1,130 +1,124 @@
-"use client"
-
 import Image from "next/image"
-import { Github, Linkedin, Mail, FileText, Briefcase } from "lucide-react"
-import { motion } from "framer-motion"
+import { Github, Linkedin, Mail, FileText, MessageCircle } from "lucide-react"
+import { UpworkIcon } from "@/components/icons/upwork"
 
 export default function Hero() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.2,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  }
-
   return (
     <section className="min-h-screen flex flex-col justify-center items-center relative pt-20 px-4" id="hero">
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="text-center space-y-8 max-w-4xl"
-      >
+      <div className="text-center space-y-8 max-w-4xl w-full">
+
         {/* Profile Image */}
-        <motion.div variants={itemVariants} className="flex justify-center">
+        <div className="flex justify-center animate-fade-up anim-delay-0">
           <div className="relative w-24 h-24 md:w-32 md:h-32">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20220821_015236-fkmtCRbCvo7wt8XHs5LmBs2saIUmL7.jpg"
+              src="/images/profile.png"
               alt="Asad"
               width={128}
               height={128}
-              className="rounded-full border-2 border-blue-500/50 shadow-lg"
+              className="rounded-full border-2 border-blue-500/50 shadow-lg object-cover object-top w-full h-full"
               priority
             />
           </div>
-        </motion.div>
+        </div>
 
         {/* Main Heading */}
-        <motion.div variants={itemVariants} className="space-y-4">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white">
+        <div className="space-y-3 animate-fade-up anim-delay-120">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
             Senior Full-Stack Engineer
           </h1>
-          <p className="text-xl md:text-2xl text-blue-400 font-semibold">
-            Building AI-Enabled SaaS Systems That Scale
+          <p className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-semibold">
+            for Remote Teams and Product Builds
           </p>
-        </motion.div>
+        </div>
 
         {/* Description */}
-        <motion.p variants={itemVariants} className="text-base md:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          I build systems that need to work at scale. Node.js, NestJS, React, Angular, AWS. Currently available for remote roles and freelance work. US and EU time zones.
-        </motion.p>
+        <div className="space-y-2 animate-fade-up anim-delay-240">
+          <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            I build and scale SaaS products, backend systems, and AI-enabled workflows with Node.js, NestJS, React, Angular, and AWS. I work well with remote teams, ship fast, and focus on clean, reliable delivery.
+          </p>
+          <p className="text-sm md:text-base text-gray-500 dark:text-gray-400 max-w-xl mx-auto">
+            Open to remote roles and freelance work. Comfortable with US and EU time zones.
+          </p>
+        </div>
 
         {/* Availability Badge */}
-        <motion.div variants={itemVariants} className="inline-block">
-          <div className="px-4 py-2 rounded-full bg-green-500/20 border border-green-500/50 text-green-300 text-sm font-medium">
+        <div className="flex justify-center animate-fade-up anim-delay-360">
+          <div className="px-4 py-2 rounded-full bg-green-500/20 border border-green-500/50 text-green-700 dark:text-green-300 text-sm font-medium">
             Currently available for new opportunities
           </div>
-        </motion.div>
+        </div>
 
         {/* CTAs */}
-        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center animate-fade-up anim-delay-480">
           <a
-            href="https://wa.me/923164363605"
-            className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+            href="#contact"
+            className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 shadow-lg"
           >
-            Book a Call
+            Hire Me
           </a>
           <a
             href="/Asad-Resume.pdf"
             download="Asad-Resume.pdf"
-            className="inline-flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-700 text-blue-300 border border-blue-500/40 font-semibold px-8 py-3 rounded-lg transition-all duration-200"
+            className="inline-flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-blue-600 dark:text-blue-300 border border-blue-500/40 font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
           >
-            <FileText className="h-4 w-4" />
-            Resume
+            <FileText className="h-4 w-4 flex-shrink-0" />
+            Download Resume
           </a>
-        </motion.div>
+        </div>
 
         {/* Social Links */}
-        <motion.div variants={itemVariants} className="flex justify-center gap-6 pt-6">
+        <div className="flex flex-wrap justify-center gap-5 pt-2 animate-fade-up anim-delay-600">
           <a
             href="https://www.linkedin.com/in/i-asad/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+            className="flex items-center gap-2 text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200 text-sm"
             aria-label="LinkedIn"
           >
-            <Linkedin className="h-6 w-6" />
+            <Linkedin className="h-5 w-5 flex-shrink-0" />
+            <span className="hidden sm:inline">LinkedIn</span>
           </a>
           <a
             href="https://github.com/iasad95"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+            className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors duration-200 text-sm"
             aria-label="GitHub"
           >
-            <Github className="h-6 w-6" />
+            <Github className="h-5 w-5 flex-shrink-0" />
+            <span className="hidden sm:inline">GitHub</span>
           </a>
           <a
             href="https://www.upwork.com/freelancers/asad007"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+            className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors duration-200 text-sm"
             aria-label="Upwork"
           >
-            <Briefcase className="h-6 w-6" />
+            <UpworkIcon className="h-5 w-5 flex-shrink-0" />
+            <span className="hidden sm:inline">Upwork</span>
           </a>
           <a
             href="mailto:asad@asadcodes.com"
-            className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
+            className="flex items-center gap-2 text-gray-400 hover:text-blue-400 transition-colors duration-200 text-sm"
             aria-label="Email"
           >
-            <Mail className="h-6 w-6" />
+            <Mail className="h-5 w-5 flex-shrink-0" />
+            <span className="hidden sm:inline">Email</span>
           </a>
-        </motion.div>
-      </motion.div>
+          <a
+            href="https://wa.me/923164363605"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-gray-500 hover:text-green-600 dark:text-gray-400 dark:hover:text-green-400 transition-colors duration-200 text-sm"
+            aria-label="WhatsApp"
+          >
+            <MessageCircle className="h-5 w-5 flex-shrink-0" />
+            <span className="hidden sm:inline">WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
     </section>
   )
 }
