@@ -1,0 +1,49 @@
+# Asad
+
+> Senior Full-Stack Engineer for remote teams and product builds. 8+ years building and scaling SaaS platforms, backend systems, and AI-enabled workflows with Node.js, NestJS, React, Angular, and AWS. Open to remote roles and freelance work.
+
+## Core Expertise
+
+- Building new SaaS features and products
+- Joining remote product teams as a full-stack engineer
+- Fixing slow or messy backend systems
+- Migrating legacy code safely with zero downtime
+- Building APIs and microservices architectures
+- Improving performance and system reliability
+- Adding AI features and document workflows
+
+## Selected Architecture & Engineering Work
+
+- [CloudDrive (Biztree)](https://asadcodes.com/#featured-case-study): Distributed file-storage microservice built with NestJS, event-driven processing, AWS S3, Lambda, and BullMQ. Handles 500K+ daily operations with sub-100ms response times, 45% faster uploads, and 99.9% uptime.
+- [Biztree Business-in-a-Box](https://asadcodes.com/#projects): Unified microservices backend (NestJS, React, MongoDB, AWS) behind 5+ SaaS applications serving 12M+ users, with async processing via BullMQ and RabbitMQ.
+- [RevBits PAM](https://asadcodes.com/#projects): Enterprise Privileged Access Management platform (React, NestJS, microservices) with real-time session forensics and audit logging. Won a Globee Gold Award (2022).
+- [Arccos Golf](https://asadcodes.com/#projects): Real-time golf performance tracking system (React, Node.js) built with Microsoft, integrating wind and slope data. Improved tracking accuracy by 40%.
+- [Ancera](https://asadcodes.com/#projects): ML-powered contamination detection pipelines (React, Node.js, machine learning) for food safety, cutting processing time by 90%.
+
+## Experience & Proven Results
+
+- Biztree — Senior Software Engineer, Remote (Jan 2023–Present): Architected a unified NestJS microservices backend for 12M+ users; led a zero-downtime MongoDB migration of 50M+ records; reduced API latency by 45%.
+- InvoZone — Senior Software Engineer, Lahore, Pakistan (Oct 2021–Jan 2023): Built the RevBits PAM platform; hardened security against XSS, SQL injection, and brute-force attacks; won a Globee Gold Award for security innovation.
+- TenX — Software Engineer, Lahore, Pakistan (Aug 2018–Oct 2021): Built full-stack systems for Ancera and Arccos Golf; ranked #3 in a global sports innovation award (Arccos).
+- 8+ years of professional experience; AWS Certified; Top Rated Plus on Upwork.
+
+## Technologies
+
+- Backend: Node.js, NestJS, Express.js, REST APIs, GraphQL
+- Frontend: React, Angular, Redux, NgRx, RxJS, Tailwind CSS
+- Databases: MongoDB, PostgreSQL, MySQL, Redis
+- Cloud & DevOps: AWS, Lambda, S3, EC2, Docker, Kubernetes, CI/CD
+- Architecture: Microservices, Distributed Systems, Event-Driven Systems, CQRS, System Design
+- AI / LLM: Claude, Cursor, AI-assisted development, AI middleware, chat systems
+
+## Professional Profiles
+
+- [LinkedIn](https://www.linkedin.com/in/i-asad/): Professional background and work history.
+- [GitHub](https://github.com/iasad95): Code and open-source activity.
+- [Upwork](https://www.upwork.com/freelancers/asad007): Top Rated Plus freelance profile and client history.
+
+## Contact
+
+- Email: asad@asadcodes.com
+- Website: https://asadcodes.com
+- Resume (PDF): https://asadcodes.com/Asad-Resume.pdf

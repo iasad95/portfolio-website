@@ -12,7 +12,7 @@ export default function Hero() {
           <div className="relative w-24 h-24 md:w-32 md:h-32">
             <Image
               src="/images/profile.png"
-              alt="Asad"
+              alt="Asad, Senior Full-Stack Engineer"
               width={128}
               height={128}
               className="rounded-full border-2 border-blue-500/50 shadow-lg object-cover object-top w-full h-full"

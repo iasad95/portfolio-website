@@ -219,10 +219,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-
-      <div className="mt-16 pt-8 border-t border-blue-500/10 text-center text-gray-500 text-sm">
-        <p>© {new Date().getFullYear()} Asad. All rights reserved.</p>
-      </div>
     </section>
   )
 }

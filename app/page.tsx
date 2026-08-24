@@ -11,12 +11,23 @@ import HowIWork from "@/components/sections/how-i-work"
 import HowIThink from "@/components/sections/how-i-think"
 import Freelance from "@/components/sections/freelance"
 import Contact from "@/components/sections/contact"
+import { profilePageSchema } from "@/lib/schema"
 
 export default function Home() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [profilePageSchema()],
+  }
+
   return (
-    <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
-      <div className="relative z-10">
+      <main className="relative z-10">
         <Hero />
         <TrustBar />
         <WhatIDo />
@@ -29,7 +40,10 @@ export default function Home() {
         <HowIThink />
         <Freelance />
         <Contact />
-      </div>
-    </main>
+      </main>
+      <footer className="py-8 px-4 border-t border-blue-500/10 text-center text-gray-500 text-sm">
+        <p>© {new Date().getFullYear()} Asad. All rights reserved.</p>
+      </footer>
+    </div>
   )
 }

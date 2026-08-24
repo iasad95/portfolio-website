@@ -4,7 +4,7 @@ import SectionHeading from "@/components/ui/section-heading"
 
 export default function FeaturedCaseStudy() {
   return (
-    <section className="py-24 px-4 scroll-mt-16">
+    <section id="featured-case-study" className="py-24 px-4 scroll-mt-16">
       <div className="max-w-4xl mx-auto">
         <SectionHeading title="Featured Case Study" subtitle="CloudDrive: 500K Daily Operations at Scale" />
         

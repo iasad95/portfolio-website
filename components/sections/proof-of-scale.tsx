@@ -11,7 +11,7 @@ export default function ProofOfScale() {
   ]
 
   return (
-    <section className="py-24 px-4 scroll-mt-16">
+    <section id="proof-of-scale" className="py-24 px-4 scroll-mt-16">
       <div className="max-w-6xl mx-auto">
         <SectionHeading title="Proof of Scale" subtitle="Delivering results at enterprise level" />
         

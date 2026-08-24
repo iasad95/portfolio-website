@@ -73,7 +73,7 @@ export default function Freelance() {
                     <Icon className="h-6 w-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">{credential.title}</h4>
+                    <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-1">{credential.title}</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">{credential.description}</p>
                   </div>
                 </div>
