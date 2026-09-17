@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { pageMetadata } from "@/lib/metadata"
 import { personSchema, websiteSchema } from "@/lib/schema"
 import { siteConfig } from "@/lib/site-config"
+import { AnalyticsTracker } from "@/components/analytics/analytics-tracker"
 import "./globals.css"
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] })
@@ -44,6 +45,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           {children}
           <Analytics />
+          <AnalyticsTracker />
         </ThemeProvider>
       </body>
     </html>

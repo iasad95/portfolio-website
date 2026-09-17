@@ -4,9 +4,9 @@
 
 export const siteConfig = {
   name: "Asad",
-  title: "Asad | Senior Full-Stack Developer, Node.js, AWS, React, AI Systems",
+  title: "Asad | Principal Software Engineer — Full-Stack, Cloud & AI Systems",
   description:
-    "Senior Full-Stack Developer with 8+ years of experience building scalable SaaS platforms with Node.js, NestJS, React, Angular, AWS, microservices, and AI-enabled workflows.",
+    "Principal Software Engineer with 8+ years building cloud-native SaaS, AI-enabled products, and Claude/OpenAI/MCP workflows using Node.js, Python, React, Next.js, Angular, and AWS.",
   url: "https://asadcodes.com",
   ogImage: "/images/og-image.jpg",
   favicon: "/favicon.png",
@@ -16,14 +16,21 @@ export const siteConfig = {
   // Bumped manually when page.tsx / components/sections content changes.
   lastContentUpdate: "2026-04-27",
   keywords: [
-    "Senior Full Stack Developer",
+    "Principal Software Engineer",
+    "Full-Stack Engineer",
     "Node.js Developer",
     "NestJS Developer",
-    "AWS Developer",
+    "Python Developer",
+    "FastAPI Developer",
     "React Developer",
+    "Next.js Developer",
     "Angular Developer",
+    "AWS Developer",
     "AI Engineer",
     "LLM Developer",
+    "MCP Server Developer",
+    ".NET Developer",
+    "Django Developer",
     "Microservices Architect",
     "Remote Developer",
     "Freelance Developer",

@@ -15,7 +15,10 @@ const knowsAbout = [
   "Node.js",
   "NestJS",
   "Express.js",
+  "Python",
+  "FastAPI",
   "React",
+  "Next.js",
   "Angular",
   "TypeScript",
   "REST APIs",
@@ -32,6 +35,10 @@ const knowsAbout = [
   "Event-Driven Architecture",
   "System Design",
   "AI-Assisted Development",
+  "Claude API",
+  "OpenAI API",
+  "MCP Server Development",
+  "RAG",
 ]
 
 export function personSchema() {
@@ -41,10 +48,25 @@ export function personSchema() {
     name: siteConfig.name,
     url: siteConfig.url,
     image: new URL(siteConfig.profileImage, siteConfig.url).toString(),
-    jobTitle: "Senior Full-Stack Engineer",
+    jobTitle: "Principal Software Engineer",
     description: siteConfig.description,
+    email: `mailto:${siteConfig.email}`,
     sameAs: siteConfig.sameAs,
     knowsAbout,
+    knowsLanguage: ["English", "Urdu"],
+    worksFor: {
+      "@type": "Organization",
+      name: "Biztree",
+    },
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "National University of Computer and Emerging Sciences (FAST-NUCES)",
+    },
+    hasCredential: {
+      "@type": "EducationalOccupationalCredential",
+      name: "AWS Certified Developer - Associate",
+      credentialCategory: "certification",
+    },
   }
 }
 

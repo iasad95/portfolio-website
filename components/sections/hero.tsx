@@ -12,7 +12,7 @@ export default function Hero() {
           <div className="relative w-24 h-24 md:w-32 md:h-32">
             <Image
               src="/images/profile.png"
-              alt="Asad, Senior Full-Stack Engineer"
+              alt="Asad, Principal Software Engineer"
               width={128}
               height={128}
               className="rounded-full border-2 border-blue-500/50 shadow-lg object-cover object-top w-full h-full"
@@ -24,17 +24,17 @@ export default function Hero() {
         {/* Main Heading */}
         <div className="space-y-3 animate-fade-up anim-delay-120">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-white leading-tight">
-            Senior Full-Stack Engineer
+            Principal Software Engineer
           </h1>
           <p className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-semibold">
-            for Remote Teams and Product Builds
+            Full-Stack, Cloud & AI Systems for Remote Teams
           </p>
         </div>
 
         {/* Description */}
         <div className="space-y-2 animate-fade-up anim-delay-240">
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            I build and scale SaaS products, backend systems, and AI-enabled workflows with Node.js, NestJS, React, Angular, and AWS. I work well with remote teams, ship fast, and focus on clean, reliable delivery.
+            I architect and scale SaaS platforms, cloud backends, and AI-enabled products — using Node.js, Python, React, Angular, and AWS, with Claude/OpenAI-based systems for document and workflow automation. I work well with remote teams, ship fast, and focus on clean, reliable delivery.
           </p>
           <p className="text-sm md:text-base text-gray-500 dark:text-gray-400 max-w-xl mx-auto">
             Open to remote roles and freelance work. Comfortable with US and EU time zones.

@@ -1,24 +1,51 @@
 "use client"
 
-import { MapPin } from "lucide-react"
+import { MapPin, GraduationCap, Award } from "lucide-react"
 import SectionHeading from "@/components/ui/section-heading"
 
+type ExperienceItem = {
+  company: string
+  position: string
+  duration: string
+  location: string
+  type?: string
+  description: string
+  highlights: string[]
+}
+
 export default function Experience() {
-  const experiences = [
+  const experiences: ExperienceItem[] = [
     {
       company: "Biztree",
-      position: "Senior Software Engineer",
+      position: "Principal Software Engineer",
       duration: "Jan 2023 - Present",
-      location: "Remote",
+      location: "Remote, Canada",
       description:
-        "Architected a unified NestJS microservices backend powering 5+ SaaS applications serving 12M+ users. Reduced API latency by 45% with BullMQ and RabbitMQ. Led a zero-downtime MongoDB migration for 50M+ records using safe batch processing and rollback strategies. Built CloudDrive supporting 500K daily file operations with RBAC, S3 presigned URLs, and AWS Lambda thumbnail generation.",
+        "Architected a unified NestJS microservices backend powering 5+ SaaS applications serving 12M+ users, cutting backend development effort by 40%. Reduced API latency by 45% with BullMQ and RabbitMQ, and led a zero-downtime MongoDB migration for 50M+ records using safe batch processing and rollback strategies. Built CloudDrive, a file platform supporting 500K+ daily operations with RBAC, S3 presigned URLs, and AWS Lambda thumbnail generation. Designed a centralized AI middleware and MCP server layer for document intelligence and conversational workflows, integrating Claude and OpenAI with structured outputs, secure tool access, token tracking, and subscription enforcement.",
       highlights: [
-        "Architected unified microservices backend for 12M+ users",
-        "Built CloudDrive: 500K daily file operations with secure access",
-        "Led zero-downtime MongoDB migration: 50M+ records",
+        "Architected unified microservices backend for 12M+ users, cutting backend effort by 40%",
+        "Designed AI middleware & MCP server layer: Claude/OpenAI workflows with secure tool access and token tracking",
+        "Built CloudDrive: 500K+ daily file operations with RBAC and secure access",
+        "Led zero-downtime MongoDB migration: 50M+ records with rollback-safe batch processing",
         "Reduced API latency by 45% using BullMQ and RabbitMQ",
         "Built HRM backend with PostgreSQL, TypeORM, CQRS",
-        "Built AI middleware for document workflows and chat systems",
+        "Strengthened engineering foundations: Docker, CI/CD, structured logging, and automated testing",
+      ],
+    },
+    {
+      company: "ConvertSite (ConvertCalculator)",
+      position: "Senior Software Engineer",
+      duration: "Jun 2024 - Aug 2025",
+      location: "Remote, Netherlands",
+      type: "Part-time Contract",
+      description:
+        "Full-stack engineer for ConvertCalculator, a configurable no-code SaaS for building calculators, quote forms, pricing engines, and lead-capture flows. Led the platform's shift into AI-native territory — evolving the drag-and-drop builder into a prompt-driven experience that generates calculators, quote forms, landing pages, and other business assets directly from user intent. Built the rules-driven workflow engine and shipped embeddable integrations for WordPress, Shopify, Wix, and Framer, backed by PostgreSQL.",
+      highlights: [
+        "Evolved a drag-and-drop builder into a prompt-driven AI app generator",
+        "Generated calculators, quote forms, and landing pages directly from user intent",
+        "Built a rules-driven workflow engine for pricing logic and lead capture",
+        "Shipped embeddable integrations for WordPress, Shopify, Wix, and Framer",
+        "Delivered full-stack features on a PostgreSQL-backed platform",
       ],
     },
     {
@@ -67,9 +94,16 @@ export default function Experience() {
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white">{exp.position}</h3>
                 <p className="text-blue-600 dark:text-blue-400 font-semibold">{exp.company}</p>
               </div>
-              <span className="text-xs font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-2.5 py-1 rounded whitespace-nowrap">
-                {exp.duration}
-              </span>
+              <div className="flex flex-col items-end gap-1.5">
+                <span className="text-xs font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800 px-2.5 py-1 rounded whitespace-nowrap">
+                  {exp.duration}
+                </span>
+                {exp.type && (
+                  <span className="text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded whitespace-nowrap">
+                    {exp.type}
+                  </span>
+                )}
+              </div>
             </div>
 
             <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-4">
@@ -91,6 +125,25 @@ export default function Experience() {
             </ul>
           </div>
         ))}
+
+        <div className="grid sm:grid-cols-2 gap-6">
+          <div className="bg-white dark:bg-gray-900/40 border border-gray-200 dark:border-gray-800 rounded-lg p-6">
+            <div className="flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wider font-semibold mb-2">
+              <GraduationCap className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+              Education
+            </div>
+            <p className="text-sm font-semibold text-gray-900 dark:text-white">Bachelor of Science in Computer Science (BSCS)</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">FAST-NUCES, Lahore, Pakistan · 2014 - 2018</p>
+          </div>
+          <div className="bg-white dark:bg-gray-900/40 border border-gray-200 dark:border-gray-800 rounded-lg p-6">
+            <div className="flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wider font-semibold mb-2">
+              <Award className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+              Certification
+            </div>
+            <p className="text-sm font-semibold text-gray-900 dark:text-white">AWS Certified Developer – Associate</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Amazon Web Services</p>
+          </div>
+        </div>
       </div>
     </section>
   )
