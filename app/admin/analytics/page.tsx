@@ -32,9 +32,14 @@ export default async function AnalyticsDashboard() {
   return (
     <main className="min-h-screen bg-background text-foreground px-4 py-10">
       <div className="max-w-6xl mx-auto space-y-10">
-        <div>
-          <h1 className="text-2xl font-bold">Site Analytics</h1>
-          <p className="text-sm text-muted-foreground">Internal dashboard — not indexed, not linked publicly.</p>
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <h1 className="text-2xl font-bold">Site Analytics</h1>
+            <p className="text-sm text-muted-foreground">Internal dashboard — not indexed, not linked publicly.</p>
+          </div>
+          <a href="/admin/settings" className="text-sm text-muted-foreground underline whitespace-nowrap">
+            Settings
+          </a>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

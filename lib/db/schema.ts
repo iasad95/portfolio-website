@@ -65,6 +65,16 @@ export function ensureSchema(): Promise<void> {
         )
       `
       await sql`INSERT INTO relay_checkpoint (id, last_acked_id) VALUES (1, 0) ON CONFLICT (id) DO NOTHING`
+
+      await sql`
+        CREATE TABLE IF NOT EXISTS dashboard_credentials (
+          id INTEGER PRIMARY KEY DEFAULT 1,
+          username TEXT NOT NULL,
+          password_hash TEXT NOT NULL,
+          updated_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+          CONSTRAINT dashboard_credentials_single_row CHECK (id = 1)
+        )
+      `
     })().catch((err) => {
       schemaReady = null
       throw err
