@@ -16,7 +16,7 @@ export default function HowIThink() {
             I am comfortable working remotely, collaborating across time zones, and taking ownership from planning to delivery. I have worked as a core team member at product companies and delivered complete systems as a freelancer on Upwork.
           </p>
           <p className="text-lg">
-            I also use AI tools like Claude and Cursor to move faster while keeping architecture, testing, and production quality strong.
+            AI is also core to what I build, not just a tool I code with. I design and ship AI/LLM systems — Claude and OpenAI integrations, MCP servers for secure tool access, and RAG-based retrieval — for real production workflows.
           </p>
         </div>
       </div>

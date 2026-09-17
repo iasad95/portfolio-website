@@ -8,12 +8,12 @@ export default function Skills() {
     {
       icon: Code2,
       title: "Backend",
-      skills: ["Node.js", "NestJS", "Express.js", "REST APIs", "GraphQL"],
+      skills: ["Node.js", "NestJS", "Express.js", "Python", "FastAPI", "REST APIs", "GraphQL", "JWT / OAuth 2.0"],
     },
     {
       icon: Code2,
       title: "Frontend",
-      skills: ["React", "Angular", "Redux", "NgRx", "RxJS", "Tailwind CSS"],
+      skills: ["React", "Next.js", "Angular", "Redux", "NgRx", "RxJS", "Tailwind CSS"],
     },
     {
       icon: Database,
@@ -23,7 +23,7 @@ export default function Skills() {
     {
       icon: Zap,
       title: "Cloud & DevOps",
-      skills: ["AWS", "Lambda", "S3", "EC2", "Docker", "Kubernetes", "CI/CD"],
+      skills: ["AWS", "Lambda", "S3", "EC2", "RDS", "Docker", "Kubernetes", "CI/CD"],
     },
     {
       icon: Brain,
@@ -33,7 +33,7 @@ export default function Skills() {
     {
       icon: Brain,
       title: "AI / LLM",
-      skills: ["Claude", "Cursor", "AI-assisted dev", "AI middleware", "Chat systems"],
+      skills: ["Claude & OpenAI APIs", "MCP Server Development", "RAG & Vector Search", "LangChain", "n8n", "Structured Outputs & Tool Calling"],
     },
     {
       icon: Code2,
@@ -75,6 +75,10 @@ export default function Skills() {
           )
         })}
       </div>
+
+      <p className="text-center text-sm text-gray-400 dark:text-gray-500 mt-10 max-w-2xl mx-auto">
+        Also comfortable with: C#, .NET, ASP.NET Core, Entity Framework, and Django.
+      </p>
     </section>
   )
 }

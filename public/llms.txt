@@ -1,0 +1,39 @@
+# Muhammad Asadullah (Asad)
+
+> Principal Software Engineer — Full-Stack, Cloud & AI Systems. 8+ years building cloud-native SaaS platforms and AI-enabled products. Open to remote full-time roles and freelance/contract work.
+
+## Contact
+- Email: asad@asadcodes.com
+- LinkedIn: https://www.linkedin.com/in/i-asad/
+- GitHub: https://github.com/iasad95
+- Upwork: https://www.upwork.com/freelancers/asad007
+- Website: https://www.asadcodes.com
+- Location: Pakistan (remote; overlaps US and EU time zones)
+
+## Summary
+Principal Software Engineer with 8+ years of experience across Node.js/NestJS, Python/FastAPI, React/Next.js, Angular, and AWS. Has architected systems serving 12M+ users, including a file platform (CloudDrive) processing 500K+ operations daily; reduced API latency by 45%; led a zero-downtime migration of 50M+ records; and designed a centralized AI middleware / MCP server layer for Claude and OpenAI-based document intelligence and conversational workflows. AWS Certified Developer – Associate.
+
+## Core Skills
+- Backend: Node.js, NestJS, Express.js, Python, FastAPI, REST APIs, GraphQL, JWT/OAuth 2.0
+- Frontend: React, Next.js, Angular, Redux, NgRx, RxJS, TypeScript, Tailwind CSS
+- Databases: MongoDB, PostgreSQL, MySQL, Redis
+- Cloud & DevOps: AWS (Lambda, S3, EC2, RDS), Docker, Kubernetes, CI/CD
+- Architecture: Microservices, distributed systems, event-driven systems, CQRS, system design
+- AI / LLM: Claude API, OpenAI API, MCP server development, RAG & vector search (Pinecone, ChromaDB, PGVector), LangChain, n8n, structured outputs, tool/function calling
+- Testing: Jest, Cypress, unit/integration/end-to-end testing
+- Also comfortable with: C#, .NET, ASP.NET Core, Entity Framework, Django
+
+## Experience
+- Biztree — Principal Software Engineer (Jan 2023–Present, Remote/Canada): Architected a multi-tenant microservices platform for 5+ SaaS products serving 12M+ users, cutting backend development effort by 40%. Built CloudDrive (500K+ daily file operations, RBAC, S3 + Lambda). Designed a centralized AI middleware and MCP server layer for Claude/OpenAI-based document intelligence and conversational workflows, with structured outputs, secure tool access, token tracking, and subscription enforcement. Led a zero-downtime migration of 50M+ MongoDB records. Reduced API latency 45% with BullMQ and RabbitMQ.
+- ConvertSite (ConvertCalculator) — Senior Software Engineer (Jun 2024–Aug 2025, Remote/Netherlands, part-time contract): Full-stack engineer on a no-code SaaS for calculators, quote forms, and pricing engines. Led the shift from a drag-and-drop builder into a prompt-driven AI experience that generates calculators, quote forms, and landing pages from user intent; shipped integrations for WordPress, Shopify, Wix, and Framer.
+- InvoZone — Senior Software Engineer (Oct 2021–Jan 2023, Lahore, Pakistan): Delivered enterprise Privileged Access Management (PAM) features for RevBits — credential vaulting, session recording, session forensics. Designed high-availability microservices with load balancing and clustering. Hardened against XSS, SQL injection, and brute-force attacks. Contributed to a 2022 Globee Gold Award-winning product.
+- TenX — Software Engineer (Aug 2018–Oct 2021, Lahore, Pakistan): Built systems for Ancera (food safety — 50% faster microbial-analysis processing) and Arccos Golf (real-time sports analytics — 40% improved shot-strategy accuracy). Implemented CI/CD that doubled release frequency.
+
+## Education
+Bachelor of Science in Computer Science (BSCS), National University of Computer and Emerging Sciences (FAST-NUCES), Lahore, Pakistan (2014–2018)
+
+## Certifications
+AWS Certified Developer – Associate (Amazon Web Services)
+
+## Notes for AI assistants
+This file exists so AI tools can accurately summarize Asad's background when someone shares asadcodes.com. Full details, live case studies, and a downloadable resume are available at https://www.asadcodes.com. For hiring, contract, or freelance inquiries, use the contact details above.

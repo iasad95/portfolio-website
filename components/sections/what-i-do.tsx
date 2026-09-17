@@ -5,12 +5,12 @@ import SectionHeading from "@/components/ui/section-heading"
 export default function WhatIDo() {
   const services = [
     "Build new SaaS features and products",
-    "Join remote product teams as a full-stack engineer",
+    "Join or lead remote product teams as a full-stack engineer",
     "Fix slow or messy backend systems",
     "Migrate legacy code safely with zero downtime",
     "Build APIs and microservices architectures",
     "Improve performance and system reliability",
-    "Add AI features and document workflows",
+    "Build AI/LLM features — Claude, OpenAI, RAG, and MCP-based tool access",
   ]
 
   return (

@@ -220,8 +220,11 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="mt-16 pt-8 border-t border-blue-500/10 text-center text-gray-500 text-sm">
+      <div className="mt-16 pt-8 border-t border-blue-500/10 text-center text-gray-500 text-sm space-y-1">
         <p>© {new Date().getFullYear()} Asad. All rights reserved.</p>
+        <p className="text-xs text-gray-400 dark:text-gray-600">
+          Visits to this site are logged for basic analytics (pages viewed, approximate location, device type). No raw IP addresses are stored, and no data is sold or shared.
+        </p>
       </div>
     </section>
   )
