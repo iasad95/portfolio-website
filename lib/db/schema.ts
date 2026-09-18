@@ -41,6 +41,11 @@ export function ensureSchema(): Promise<void> {
           PRIMARY KEY (delivery_id, link_index)
         )
       `
+      // Backs pruneStaleRelayLinks()'s age filter, called on every /r/ack (every few minutes,
+      // forever) — without this, that's a full sequential scan of relay_links every time.
+      // (getEarliestLinkRegistrationTime()'s per-delivery lookup is already covered by the
+      // PRIMARY KEY above, whose leading column is delivery_id.)
+      await sql`CREATE INDEX IF NOT EXISTS idx_relay_links_created ON relay_links (created_at)`
 
       await sql`
         CREATE TABLE IF NOT EXISTS relay_events (

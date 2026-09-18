@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server"
 import { ensureSchema } from "@/lib/db/schema"
-import { ackThrough } from "@/lib/relay/db"
+import { ackThrough, pruneAckedRelayEvents, pruneStaleRelayLinks } from "@/lib/relay/db"
 import { verifyRelaySecret } from "@/lib/relay/auth"
 
 export async function POST(request: NextRequest) {
@@ -28,6 +28,15 @@ export async function POST(request: NextRequest) {
 
   await ensureSchema()
   const ackedThrough = await ackThrough(cursor)
+
+  // Piggyback storage cleanup on this already-periodic call (the outreach backend acks every
+  // few minutes) rather than running a separate cron. Best-effort — never let a housekeeping
+  // failure turn a successful ack into an error the backend would retry.
+  try {
+    await Promise.all([pruneAckedRelayEvents(), pruneStaleRelayLinks()])
+  } catch (err) {
+    console.error("relay retention prune error", err)
+  }
 
   return NextResponse.json({ ok: true, ackedThrough })
 }

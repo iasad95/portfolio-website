@@ -1,5 +1,15 @@
 import { createHash } from "crypto"
 
+// Apple owns all of 17.0.0.0/8, which is where Mail Privacy Protection's proxy fetches
+// originate — it preserves a plausible Mail user-agent, so the network is the only reliable
+// signal. Must be checked against the raw IP, before hashIp() below throws that away.
+const APPLE_NET = /^17\./
+
+export function isAppleMailPrivacyRelay(ip: string | null | undefined): boolean {
+  if (!ip) return false
+  return APPLE_NET.test(ip.trim())
+}
+
 function truncateIp(ip: string): string {
   if (ip.includes(":")) {
     // IPv6 — keep the first 4 groups (~/64), drop the rest.

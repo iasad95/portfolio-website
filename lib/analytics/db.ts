@@ -18,6 +18,11 @@ export interface InsertEventInput {
   campaignRef: string | null
 }
 
+export async function resetSiteAnalytics(): Promise<void> {
+  const sql = getSql()
+  await sql`DELETE FROM analytics_events`
+}
+
 export async function insertEvent(event: InsertEventInput): Promise<void> {
   const sql = getSql()
   await sql`
