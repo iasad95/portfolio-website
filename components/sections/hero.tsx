@@ -34,7 +34,7 @@ export default function Hero() {
         {/* Description */}
         <div className="space-y-2 animate-fade-up anim-delay-240">
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            I architect and scale SaaS platforms, cloud backends, and AI-enabled products — using Node.js, Python, React, Angular, and AWS, with Claude/OpenAI-based systems for document and workflow automation. I work well with remote teams, ship fast, and focus on clean, reliable delivery.
+            I architect and scale SaaS platforms, cloud backends, and AI-enabled products, using Node.js, Python, React, Angular, and AWS, with Claude/OpenAI-based systems for document and workflow automation. I work well with remote teams, ship fast, and focus on clean, reliable delivery.
           </p>
           <p className="text-sm md:text-base text-gray-500 dark:text-gray-400 max-w-xl mx-auto">
             Open to remote roles and freelance work. Comfortable with US and EU time zones.

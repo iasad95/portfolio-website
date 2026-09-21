@@ -10,7 +10,7 @@ export default function WhatIDo() {
     "Migrate legacy code safely with zero downtime",
     "Build APIs and microservices architectures",
     "Improve performance and system reliability",
-    "Build AI/LLM features — Claude, OpenAI, RAG, and MCP-based tool access",
+    "Build AI/LLM features: Claude, OpenAI, RAG, and MCP-based tool access",
   ]
 
   return (

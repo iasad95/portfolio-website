@@ -35,9 +35,9 @@ const caseStudies: CaseStudy[] = [
   {
     title: "ConvertCalculator: From Drag-and-Drop Builder to AI-Native App Generator",
     problem:
-      "ConvertCalculator is a no-code SaaS for building calculators, quote forms, and pricing engines. Building one still meant manually dragging, configuring, and wiring fields by hand — slow for non-technical users and a ceiling on how fast new templates could ship.",
+      "ConvertCalculator is a no-code SaaS for building calculators, quote forms, and pricing engines. Building one still meant manually dragging, configuring, and wiring fields by hand, which was slow for non-technical users and a ceiling on how fast new templates could ship.",
     solution:
-      "I led the shift from a pure drag-and-drop builder to a prompt-driven AI experience: users describe what they need in plain language, and the system generates a working calculator, quote form, landing page, or lead-capture flow — fully wired into the existing rules-driven workflow engine and ready to embed on WordPress, Shopify, Wix, or Framer.",
+      "I led the shift from a pure drag-and-drop builder to a prompt-driven AI experience: users describe what they need in plain language, and the system generates a working calculator, quote form, landing page, or lead-capture flow, fully wired into the existing rules-driven workflow engine and ready to embed on WordPress, Shopify, Wix, or Framer.",
     decisions: [
       { label: "Prompt-to-App Generation", detail: "LLM-driven pipeline maps user intent to structured app definitions (fields, logic, pricing rules) instead of free-form output" },
       { label: "Rules Engine Integration", detail: "Generated assets plug directly into the existing rules-driven workflow engine, so AI output behaves like a hand-built configuration" },
@@ -46,7 +46,7 @@ const caseStudies: CaseStudy[] = [
     ],
     outcomes: [
       "Replaced manual drag-and-drop configuration with natural-language app generation",
-      "Generated output plugs directly into the existing rules engine — structured, not freeform",
+      "Generated output plugs directly into the existing rules engine: structured, not freeform",
       "Shipped as embeddable widgets across WordPress, Shopify, Wix, and Framer",
     ],
     tech: ["TypeScript", "LLM Integration", "Claude / OpenAI", "PostgreSQL", "Rules Engine", "WordPress", "Shopify", "Wix", "Framer"],
@@ -57,7 +57,7 @@ export default function FeaturedCaseStudy() {
   return (
     <section id="featured-case-study" className="py-24 px-4 scroll-mt-16">
       <div className="max-w-4xl mx-auto space-y-20">
-        <SectionHeading title="Featured Case Studies" subtitle="Two systems built to scale — one for data, one for AI" />
+        <SectionHeading title="Featured Case Studies" subtitle="Two systems built to scale: one for data, one for AI" />
 
         {caseStudies.map((cs, index) => (
           <div key={index} className="space-y-8">

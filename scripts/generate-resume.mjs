@@ -50,7 +50,7 @@ function generate(outputPath) {
   function jobHeader(role, company, dates, location) {
     ensureSpace(80);
     doc.moveDown(0.2);
-    doc.fillColor(INK).fontSize(10).font('Helvetica-Bold').text(`${role} — ${company}`, { continued: false });
+    doc.fillColor(INK).fontSize(10).font('Helvetica-Bold').text(`${role}, ${company}`, { continued: false });
     doc.fillColor(MUTED).fontSize(9).font('Helvetica-Oblique').text(`${dates}  |  ${location}`);
     doc.moveDown(0.1);
   }
@@ -97,7 +97,7 @@ function generate(outputPath) {
     'Strengthened engineering foundations: Docker, CI/CD, structured logging, and automated testing',
   ].forEach(bullet);
 
-  jobHeader('Senior Software Engineer', 'ConvertSite (ConvertCalculator) — Part-time Contract', 'Jun 2024 - Aug 2025', 'Remote, Netherlands');
+  jobHeader('Senior Software Engineer', 'ConvertSite (ConvertCalculator), Part-time Contract', 'Jun 2024 - Aug 2025', 'Remote, Netherlands');
   [
     'Evolved a drag-and-drop builder into a prompt-driven AI app generator',
     'Generated calculators, quote forms, and landing pages directly from user intent',

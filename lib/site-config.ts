@@ -4,7 +4,7 @@
 
 export const siteConfig = {
   name: "Asad",
-  title: "Asad | Principal Software Engineer — Full-Stack, Cloud & AI Systems",
+  title: "Asad | Principal Software Engineer: Full-Stack, Cloud & AI Systems",
   description:
     "Principal Software Engineer with 8+ years building cloud-native SaaS, AI-enabled products, and Claude/OpenAI/MCP workflows using Node.js, Python, React, Next.js, Angular, and AWS.",
   url: "https://asadcodes.com",

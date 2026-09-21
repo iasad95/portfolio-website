@@ -39,7 +39,7 @@ export default function Experience() {
       location: "Remote, Netherlands",
       type: "Part-time Contract",
       description:
-        "Full-stack engineer for ConvertCalculator, a configurable no-code SaaS for building calculators, quote forms, pricing engines, and lead-capture flows. Led the platform's shift into AI-native territory — evolving the drag-and-drop builder into a prompt-driven experience that generates calculators, quote forms, landing pages, and other business assets directly from user intent. Built the rules-driven workflow engine and shipped embeddable integrations for WordPress, Shopify, Wix, and Framer, backed by PostgreSQL.",
+        "Full-stack engineer for ConvertCalculator, a configurable no-code SaaS for building calculators, quote forms, pricing engines, and lead-capture flows. Led the platform's shift into AI-native territory, evolving the drag-and-drop builder into a prompt-driven experience that generates calculators, quote forms, landing pages, and other business assets directly from user intent. Built the rules-driven workflow engine and shipped embeddable integrations for WordPress, Shopify, Wix, and Framer, backed by PostgreSQL.",
       highlights: [
         "Evolved a drag-and-drop builder into a prompt-driven AI app generator",
         "Generated calculators, quote forms, and landing pages directly from user intent",

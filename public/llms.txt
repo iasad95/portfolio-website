@@ -1,6 +1,6 @@
 # Muhammad Asadullah (Asad)
 
-> Principal Software Engineer — Full-Stack, Cloud & AI Systems. 8+ years building cloud-native SaaS platforms and AI-enabled products. Open to remote full-time roles and freelance/contract work.
+> Principal Software Engineer: Full-Stack, Cloud & AI Systems. 8+ years building cloud-native SaaS platforms and AI-enabled products. Open to remote full-time roles and freelance/contract work.
 
 ## Contact
 - Email: asad@asadcodes.com
@@ -29,10 +29,10 @@ Principal Software Engineer with 8+ years of experience across Node.js/NestJS, P
 - Also comfortable with: C#, .NET, ASP.NET Core, Entity Framework, Django
 
 ## Experience
-- Biztree — Principal Software Engineer (Jan 2023–Present, Remote/Canada): Architected a multi-tenant microservices platform for 5+ SaaS products serving 12M+ users, cutting backend development effort by 40%. Built CloudDrive (500K+ daily file operations, RBAC, S3 + Lambda). Designed a centralized AI middleware and MCP server layer for Claude/OpenAI-based document intelligence and conversational workflows, with structured outputs, secure tool access, token tracking, and subscription enforcement. Led a zero-downtime migration of 50M+ MongoDB records. Reduced API latency 45% with BullMQ and RabbitMQ.
-- ConvertSite (ConvertCalculator) — Senior Software Engineer (Jun 2024–Aug 2025, Remote/Netherlands, part-time contract): Full-stack engineer on a no-code SaaS for calculators, quote forms, and pricing engines. Led the shift from a drag-and-drop builder into a prompt-driven AI experience that generates calculators, quote forms, and landing pages from user intent; shipped integrations for WordPress, Shopify, Wix, and Framer.
-- InvoZone — Senior Software Engineer (Oct 2021–Jan 2023, Lahore, Pakistan): Delivered enterprise Privileged Access Management (PAM) features for RevBits — credential vaulting, session recording, session forensics. Designed high-availability microservices with load balancing and clustering. Hardened against XSS, SQL injection, and brute-force attacks. Contributed to a 2022 Globee Gold Award-winning product.
-- TenX — Software Engineer (Aug 2018–Oct 2021, Lahore, Pakistan): Built systems for Ancera (food safety — 50% faster microbial-analysis processing) and Arccos Golf (real-time sports analytics — 40% improved shot-strategy accuracy). Implemented CI/CD that doubled release frequency.
+- Biztree, Principal Software Engineer (Jan 2023–Present, Remote/Canada): Architected a multi-tenant microservices platform for 5+ SaaS products serving 12M+ users, cutting backend development effort by 40%. Built CloudDrive (500K+ daily file operations, RBAC, S3 + Lambda). Designed a centralized AI middleware and MCP server layer for Claude/OpenAI-based document intelligence and conversational workflows, with structured outputs, secure tool access, token tracking, and subscription enforcement. Led a zero-downtime migration of 50M+ MongoDB records. Reduced API latency 45% with BullMQ and RabbitMQ.
+- ConvertSite (ConvertCalculator), Senior Software Engineer (Jun 2024–Aug 2025, Remote/Netherlands, part-time contract): Full-stack engineer on a no-code SaaS for calculators, quote forms, and pricing engines. Led the shift from a drag-and-drop builder into a prompt-driven AI experience that generates calculators, quote forms, and landing pages from user intent; shipped integrations for WordPress, Shopify, Wix, and Framer.
+- InvoZone, Senior Software Engineer (Oct 2021–Jan 2023, Lahore, Pakistan): Delivered enterprise Privileged Access Management (PAM) features for RevBits: credential vaulting, session recording, session forensics. Designed high-availability microservices with load balancing and clustering. Hardened against XSS, SQL injection, and brute-force attacks. Contributed to a 2022 Globee Gold Award-winning product.
+- TenX, Software Engineer (Aug 2018–Oct 2021, Lahore, Pakistan): Built systems for Ancera (food safety: 50% faster microbial-analysis processing) and Arccos Golf (real-time sports analytics: 40% improved shot-strategy accuracy). Implemented CI/CD that doubled release frequency.
 
 ## Education
 Bachelor of Science in Computer Science (BSCS), National University of Computer and Emerging Sciences (FAST-NUCES), Lahore, Pakistan (2014–2018)
